@@ -1,15 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Путин Хуйло</title>
-	<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <title>Слава Україні</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .main {
+      text-align: center;
+      margin-top: 10vh;
+    }
+    .main button {
+      color: #fff;
+      background-color: #000;
+      padding: 5px 15px;
+      border-radius: 15px;
+      font-size: 55px;
+    }
+  </style>
 </head>
 <body>
-	<h1>Путин</h1>
-	<h1>ХУЙЛО!</h1>
 
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<div class="main">
+  <button id="testbtn">TEST</button>
+</div>
+
+
+
+<div class="container">
+  <svg xmlns="http://www.w3.org/2000/svg" id="svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="0 0 300 300" aria-labelledby="title desc">
+      <!-- Title -->  
+      <title id="title">Слава Україні!!!</title>
+      <defs>
+          <style>
+              <![CDATA[
+                /*@import url("https://fonts.googleapis.com/css?family=Open+Sans");  /*Optional - link a Google font here */
+                text{ /* Text global style here */
+                  font-family: Arial, Helvetica, sans-serif; /* font family names here, optionally add a Google font - sample: "Open Sans" */
+                  text-transform: none; /* Text upper/lower case/ none */
+                  font-weight: 700; /* Text weight */
+                  font-size: 24px; /* Text size */
+                  fill: #0066cc; /* Text color */
+                }
+                #bg{ /* Background color */
+                  fill: #fff;
+                }
+                .flagColor1{ 
+                  fill: #0066cc; /* Flag color 1 here  */
+                }
+                .flagColor2{ 
+                  fill: #ffcc00; /* Flag color 2 here  */
+                }  
+                #svg{
+                  width: 100%; /* Make SVG responsive for Internet Explorer */
+                  padding-bottom: 100%; /* SVG bottom hack for Internet Explorer */
+                  height: 1px; /* SVG bottom hack for Internet Explorer */
+                  overflow: visible; /* For Mozilla if using SVG bottom hack for Internet Explorer */
+                }  
+              ]]>
+          </style>
+     </defs>
+     <!-- JavaScript -->
+     <script type="text/javascript">
+       "use strict";
+       <![CDATA[
+           
+        ]]>
+      </script> 
+      <!-- SVG wrapper -->
+      <svg viewBox="0 0 300 300">
+          <!-- Background -->
+          <path id="bg" d="M0 0h300v300H0z"/>
+          <!-- Flag -->
+          <!-- Flag top-->
+          <svg id="flagTop" width="240" height="300" x="30">
+              <path id="top" d="M-900 30c50.3 0 100 40 150 40s100-40 150-40 100 40 150 40 100-40 150-40 100 40 150 40S-50 30 0 30s100 40 150 40 100-40 150-40v80c-50.3 0-100 40-150 40S50 110 0 110s-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40z" class="flagColor1"/>
+          </svg>
+          <!-- Flag bottom-->
+          <svg id="flagBottom" width="240" height="300" x="30">
+              <path id="bottom" d="M-900 110c50.3 0 100 40 150 40s100-40 150-40 100 40 150 40 100-40 150-40 100 40 150 40 100-40 150-40 100 40 150 40 100-40 150-40v80c-50.3 0-100 40-150 40S50 190 0 190s-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40z" class="flagColor2"/>
+          </svg>
+          <!-- Text -->
+          <text>
+              <tspan x="150" y="275" text-anchor="middle">
+                  #StandUpForUkraine
+              </tspan>
+          </text>
+      </svg>
+  </svg>  
+</div>
+
+<!-- partial -->
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script  src="./script.js"></script>
+
 </body>
 </html>
