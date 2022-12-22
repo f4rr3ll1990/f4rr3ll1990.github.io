@@ -1,41 +1,33 @@
-document.addEventListener("DOMContentLoaded", function(c) {
-    window.addEventListener("load", function(c) {
-        function a() {
-            b += 2.5;
-            d.setAttribute("transform", "translate(" + b + ")");
-            e.setAttribute("transform", "translate(" + b + ")");
-            900 <= Math.abs(b) && (b = 0);
-            requestAnimationFrame(a);
-        }
-        var b = 0,
-            d = document.getElementById("top"),
-            e = document.getElementById("bottom");
-        window.requestAnimationFrame(a) || window.webkitRequestAnimationFrame(a) || window.mozRequestAnimationFrame(a) || window.oRequestAnimationFrame(a) || window.msRequestAnimationFrame(a);
-    }, !1);
-});
-
-
-
 let tg = window.Telegram.WebApp;
-
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-let item = "QWERTY";
+let productData;
 
-let btn = document.getElementById("testbtn");
-
-btn.addEventListener("click", function() {
+$(".product-card__buttons .btn").click(function (e) {
+  productData = {
+    name: $(this).data("name"),
+    price: $(this).data("price"),
+    productId: $(this).data("product")
+  };
+  console.log(productData);
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
   } else {
-    tg.MainButton.setText(`Вы нажали на кнопку: "${item}"`);
+    tg.MainButton.setText(`Купить: "${productData.name}"`);
     tg.MainButton.show();
   }
 });
 
-Telegram.WebApp.onEvent("mainButtonClicked", function() {
-  tg.sendData(item);
+Telegram.WebApp.onEvent("mainButtonClicked", function () {
+  tg.sendData(JSON.stringify(productData));
 });
+
+$("#info").html(`${tg.initDataUnsafe.user.first_name}`);
+
+$("#data").html(`${JSON.stringify(tg.initDataUnsafe)}`);
+
+
+

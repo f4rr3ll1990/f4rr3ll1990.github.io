@@ -1,99 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Слава Україні</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
-  <style>
-    .main {
-      text-align: center;
-      margin-top: 10vh;
-    }
-    .main button {
-      color: #fff;
-      background-color: #000;
-      padding: 5px 15px;
-      border-radius: 15px;
-      font-size: 55px;
-    }
-  </style>
 </head>
+
 <body>
+  <header>
+    <a href="#" class="logo">Logo</a>
+    <div class="mean-toggle"></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
 
+  <main>
+    <div class="container">
+      <div class="row">
 
-<div class="main">
-  <button id="testbtn">TEST</button>
-</div>
+        <div class="col-6">
+          <div class="product-card__wrapper">
+            <div class="product-card__image">
+              <img src="https://via.placeholder.com/150" alt="">
+            </div>
+            <div class="product-card__title">
+              Product 1
+            </div>
+            <div class="product-card__price">10грн.</div>
+            <div class="product-card__buttons">
+              <button class="btn" data-price="10" data-product="1" data-name="Product 1">Купить</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-6">
+          <div class="product-card__wrapper">
+            <div class="product-card__image">
+              <img src="https://via.placeholder.com/150" alt="">
+            </div>
+            <div class="product-card__title">
+              Product 2
+            </div>
+            <div class="product-card__price">13грн.</div>
+            <div class="product-card__buttons">
+              <button class="btn" data-price="13" data-product="2" data-name="Product 2">Купить</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-6">
+          <div class="product-card__wrapper">
+            <div class="product-card__image">
+              <img src="https://via.placeholder.com/150" alt="">
+            </div>
+            <div class="product-card__title">
+              Product 3
+            </div>
+            <div class="product-card__price">88грн.</div>
+            <div class="product-card__buttons">
+              <button class="btn" data-price="88" data-product="3" data-name="Product 3">Купить</button>
+            </div>
+          </div>
+        </div>
 
-<div class="container">
-  <svg xmlns="http://www.w3.org/2000/svg" id="svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="0 0 300 300" aria-labelledby="title desc">
-      <!-- Title -->  
-      <title id="title">Слава Україні!!!</title>
-      <defs>
-          <style>
-              <![CDATA[
-                /*@import url("https://fonts.googleapis.com/css?family=Open+Sans");  /*Optional - link a Google font here */
-                text{ /* Text global style here */
-                  font-family: Arial, Helvetica, sans-serif; /* font family names here, optionally add a Google font - sample: "Open Sans" */
-                  text-transform: none; /* Text upper/lower case/ none */
-                  font-weight: 700; /* Text weight */
-                  font-size: 24px; /* Text size */
-                  fill: #0066cc; /* Text color */
-                }
-                #bg{ /* Background color */
-                  fill: #fff;
-                }
-                .flagColor1{ 
-                  fill: #0066cc; /* Flag color 1 here  */
-                }
-                .flagColor2{ 
-                  fill: #ffcc00; /* Flag color 2 here  */
-                }  
-                #svg{
-                  width: 100%; /* Make SVG responsive for Internet Explorer */
-                  padding-bottom: 100%; /* SVG bottom hack for Internet Explorer */
-                  height: 1px; /* SVG bottom hack for Internet Explorer */
-                  overflow: visible; /* For Mozilla if using SVG bottom hack for Internet Explorer */
-                }  
-              ]]>
-          </style>
-     </defs>
-     <!-- JavaScript -->
-     <script type="text/javascript">
-       "use strict";
-       <![CDATA[
-           
-        ]]>
-      </script> 
-      <!-- SVG wrapper -->
-      <svg viewBox="0 0 300 300">
-          <!-- Background -->
-          <path id="bg" d="M0 0h300v300H0z"/>
-          <!-- Flag -->
-          <!-- Flag top-->
-          <svg id="flagTop" width="240" height="300" x="30">
-              <path id="top" d="M-900 30c50.3 0 100 40 150 40s100-40 150-40 100 40 150 40 100-40 150-40 100 40 150 40S-50 30 0 30s100 40 150 40 100-40 150-40v80c-50.3 0-100 40-150 40S50 110 0 110s-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40z" class="flagColor1"/>
-          </svg>
-          <!-- Flag bottom-->
-          <svg id="flagBottom" width="240" height="300" x="30">
-              <path id="bottom" d="M-900 110c50.3 0 100 40 150 40s100-40 150-40 100 40 150 40 100-40 150-40 100 40 150 40 100-40 150-40 100 40 150 40 100-40 150-40v80c-50.3 0-100 40-150 40S50 190 0 190s-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40-100 40-150 40-100-40-150-40z" class="flagColor2"/>
-          </svg>
-          <!-- Text -->
-          <text>
-              <tspan x="150" y="275" text-anchor="middle">
-                  #StandUpForUkraine
-              </tspan>
-          </text>
-      </svg>
-  </svg>  
-</div>
+        <div class="col-6">
+          <div class="product-card__wrapper">
+            <div class="product-card__image">
+              <img src="https://via.placeholder.com/150" alt="">
+            </div>
+            <div class="product-card__title">
+              Product 4
+            </div>
+            <div class="product-card__price">100грн.</div>
+            <div class="product-card__buttons">
+              <button class="btn" data-price="100" data-product="4" data-name="Product 4">Купить</button>
+            </div>
+          </div>
+        </div>
 
-<!-- partial -->
+      </div>
+    </div>
+  </main>
 
+  <footer>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script  src="./script.js"></script>
-
+  <script src="./script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.mean-toggle').click(function () {
+        $('.mean-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
 </body>
+
 </html>
