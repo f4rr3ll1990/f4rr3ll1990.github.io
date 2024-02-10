@@ -20,7 +20,115 @@
 <body>
 
     <header>
-        <nav class="w-top_nav container-fluid">
+
+        <!-- Mobile nav -->
+        <nav class="mob-info">
+            <div class="topbuttons-wrap">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="image/main/phone_iphone.svg" alt="">
+                            <span>+38 098 88-888-88</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <img src="image/main/person.svg" alt="">
+                            <span>Вход</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <img src="image/main/language.svg" alt="">
+                            <span>Укр</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar mob-nav container-fluid">
+            <div class="row">
+                <div class="mobile-logo_left">
+                    <a href="/" class="logo-image_link">
+                        <img src="image/main/Logo.svg" alt="" class="img-fluid">
+                    </a>
+                </div>
+    
+                <div class="mobile-buttons_right">
+
+                    <a class="nav-link top-cart_button" href="#">
+                        <img src="image/main/shopping_cart.svg" alt="" class="menubuttons-icon">
+                    </a>
+
+                    <button class="navbar-toggler mobile-nav_button" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon"><span></span><span></span><span></span></div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+
+                <!-- Links -->
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Видеонаблюдение</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контроль доступа</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Домофоны</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Услуги</a>
+                    </li>
+                </ul>
+                <!-- <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">What does it do?<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Geographic Coverage</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Content Feed<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Events<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul> -->
+                <!-- Links -->
+
+            </div>
+            <!-- Collapsible content -->
+
+        </nav>
+
+
+
+        <!-- Desktop nav -->
+        <nav class="w-top_nav container-fluid desk-nav">
             <div class="row">
                 <div class="topmenu-wrap">
                     <ul class="nav">
@@ -65,7 +173,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="w-bottom_nav container-fluid">
+        <nav class="w-bottom_nav container-fluid desk-nav">
             <div class="row">
                 <div class="logo-wrap">
                     <a href="/" class="logo-image_link">
@@ -129,11 +237,11 @@
         <div class="hero-slider hero-height">
 
             <div class="hero-item">
-                <div class="left-image">
-                    <img src="image/main/hero-banner1.png" class="img-fluid" alt="...">
+                <div class="left-image" style="background-image: url('image/main/hero-banner1.png');">
+                    <!-- <img src="image/main/hero-banner1.png" class="img-fluid" alt="..."> -->
                 </div>
-                <div class="right-image">
-                    <div class="img-block"><img src="image/main/hero-banner1_1.png" class="img-fluid" alt="..."></div>
+                <div class="right-image" style="background-image: url('image/main/hero-banner1_1.png');">
+
                     <div class="text-block">
                         <div class="text-block_header">Монтаж</div>
                         <div class="text-block_list m-4">
@@ -151,7 +259,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- 
             <div class="hero-item">
                 <div class="left-image">
                     <img src="image/main/hero-banner1.png" class="img-fluid" alt="...">
@@ -174,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
@@ -317,7 +425,19 @@
             });
 
 
-        });
+            // $('.mobile-nav_button').on('click', function () {
+            //     $('.animated-icon').toggleClass('open');
+            // });
+
+            $('#navbarSupportedContent22').on('hide.bs.collapse', function () {
+                $('.animated-icon').removeClass('open');
+            })
+            $('#navbarSupportedContent22').on('show.bs.collapse', function () {
+                $('.animated-icon').addClass('open');
+            })
+
+
+        }); // $(document).ready
     </script>
 </body>
 
