@@ -324,3 +324,6 @@
 .cat-bottom {
     height: 12.6vh;
 }
+.cat-bottom img {
+    width: 100%;
+}
