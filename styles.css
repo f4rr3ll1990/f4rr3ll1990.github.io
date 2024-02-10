@@ -513,6 +513,9 @@
     .hero-item .right-image .text-block {
         width: 100%;
     }
+    .text-block_list {
+        padding: 0 10vw;
+    }
 }
 
 @media (max-width: 400px) {
