@@ -480,6 +480,76 @@
 }
 
 
+/* Advantages */
+.advantages {
+    margin-top: 40px;
+    padding-top: 80px;
+}
+
+.advantages-title {
+    font-family: IBM Plex Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;   
+}
+
+.advantages-subtitle {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;  
+}
+.advantages-subtitle:after {
+    content: url('image/main/advantages.svg');
+    position: absolute;
+    margin-left: -324px;
+    margin-top: 50px;
+}
+.advantages-subtitle span {
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;    
+}
+
+.advantages-row {
+    margin-top: 64px;
+}
+
+.advantages-card {
+    border: 2px solid #A9B4BC;
+    border-radius: 8px;
+    margin-top: 24px;
+    min-height: 21.6vh;
+}
+
+.advantages-card_title {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media */
 .mob-nav {
     display: none;
