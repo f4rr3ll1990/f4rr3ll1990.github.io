@@ -211,7 +211,6 @@
 
 
 /* HERO */
-.hero-height {}
 
 .hero .slick-slide {
     margin: 0px;
@@ -523,30 +522,326 @@
 
 .advantages-row {
     margin-top: 64px;
+    margin-bottom: 120px;
 }
 
 .advantages-card {
     border: 2px solid #A9B4BC;
     border-radius: 8px;
     margin-top: 24px;
-    min-height: 21.6vh;
+    background-repeat: no-repeat;
+    background-position: 93% 40px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.advantages-content {
+    margin: 24px;
+}
+
+
 
 .advantages-card_title {
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 16px;
+}
 
+.advantages-card_list {
+    max-width: 26vw;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4E4E4E;
+    margin: 24px 16px;
+}
+
+.advantages-card_footer {
+    height: 30%;
+    border-top: 1px solid #000;
+    margin: 0px 24px;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.advantages-card_footer .invisible_button {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+    margin-right: 48px;
+}
+.advantages-card_footer .invisible_button:after {
+    content: url('image/main/Arrow-right.svg');
+    position: relative;
+    top: 3px;
+    left: 15px;
 }
 
 
 
+/* Links section */
+.links-section {
+    background-color: #F7FAFF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.links-section_title {
+    font-family: IBM Plex Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222222;
+    padding: 0px 16vw;
+}
+
+.links-section_left {
+    padding-top: 60px;
+}
+.links-section_left a {
+    color: #222222;
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+.links-section_left li {
+    padding-bottom: 12px;
+}
+.links-section_right {
+    padding-top: 128px;
+    color: #696969;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 
+/* Request section */
+.request-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.request-section_title {
+    color: #4E4E4E;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.request-section_buttonwrap {
+    padding-top: 40px;
+    text-align: center;
+}
+.request-button_arrow {
+    padding: 12px 100px 16px 100px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: #38b92c; 
+    border: none;
+    border-radius: 8px;
+}
+.request-button_arrow span {
+    background-image: url('image/main/Arrow 4.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.request-section_text {
+    padding-top: 40px;
+    color: #4E4E4E;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 
+/* Portfolio section */
+.portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.portfolio-section_title {
+    color: #000000;
+    font-family: IBM Plex Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+}
+.portfolio-section .nav-link {
+    padding-top: 80px;
+    color: #4E4E4E;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+}
+.portfolio-section .nav-link.active {
+    background-color: transparent;
+    color: #2780E6;
+    text-decoration: underline;
+}
+.portfolio-section .tab-content {
+    padding-top: 60px;
+}
+.portfolio-section .tab-content .img-wrap {
+    margin-bottom: 28px;
+}
+.portfolio-section .tab-content img {
+    width: 100%;
+}
+
+.portfolio-all_wrap {
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+.portfolio-all_button {
+    background-color: #207de9;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
 
 
+/* Articles section */
+.articles-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #083973;
 
+}
+.articles-section_header {
+    width: 100%;
+    font-family: IBM Plex Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
 
+.articles-section_cardwrap {
+    padding-top: 60px;
+}
+.articles-section_card {
+    background-color: #fff;
+    border-radius: 12px;
+}
+.articles-section_card img {
+    width: 100%;
+}
+.articles-section_cardtext {
+    padding: 16px 27px;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
 
+/* Text-section */
+.text-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.text-section_title {
+    font-family: IBM Plex Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222222;
+    width: 100%;
+}
+.text-section_subtitle {
+    padding-top: 34px;
+    font-family: IBM Plex Sans;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222222;
+    width: 100%;
+}
+.text-section_col {
+    margin-top: 80px;
+}
+
+.text-section_textwrap {
+    padding: 32px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border-radius: 25px;
+}
+.text-section_textwrap .p-head {
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 
 
