@@ -95,31 +95,6 @@
                         <a class="nav-link">Услуги</a>
                     </li>
                 </ul>
-                <!-- <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">What does it do?<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Geographic Coverage</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Content Feed<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Events<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul> -->
-                <!-- Links -->
-
             </div>
             <!-- Collapsible content -->
 
@@ -173,7 +148,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="w-bottom_nav container-fluid desk-nav">
+        <nav id="navbar" class="w-bottom_nav container-fluid desk-nav">
             <div class="row">
                 <div class="logo-wrap">
                     <a href="/" class="logo-image_link">
@@ -233,36 +208,45 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-slider hero-height">
-
+<section class="hero d-flex">
+    <div class="hero-left mobile-hide">
+        <div class="hero-slider">
             <div class="hero-item">
-                <div class="left-image" style="background-image: url('image/main/hero-banner1.png');">
-                    <!-- <img src="image/main/hero-banner1.png" class="img-fluid" alt="..."> -->
-                </div>
-                <div class="right-image" style="background-image: url('image/main/hero-banner1_1.png');">
-
-                    <div class="text-block">
-                        <div class="text-block_header">Монтаж</div>
-                        <div class="text-block_list m-4">
-                            <ul>
-                                <li>Установка видеонаблюдения под ключ</li>
-                                <li>Установка сигнализании</li>
-                                <li>Установка домофонов</li>
-                                <li>Ремонт</li>
-                                <li>Техническое обслуживание </li>
-                            </ul>
-                        </div>
-                        <div class="text-block_buttonwrap">
-                            <button class="hero-btn btn btn-lg">Оставить заявку</button>
-                        </div>
+                <div class="hero-image_block" style="background-image: url('image/main/hero-banner1.png');">
+                    <div class="slider-title">
+                        Создай свою безопастность 
                     </div>
                 </div>
             </div>
-
+            <div class="hero-item">
+                <div class="hero-image_block" style="background-image: url('image/main/hero-banner1.png');">
+                    <div class="slider-title">
+                        Создай свою безопастность 
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="hero-right" style="background-image: url('image/main/hero-banner1_1.png');">
+        <div class="text-block">
+            <div class="text-block_header">Монтаж</div>
+            <div class="text-block_list m-4">
+                <ul>
+                    <li>Установка видеонаблюдения под ключ</li>
+                    <li>Установка сигнализании</li>
+                    <li>Установка домофонов</li>
+                    <li>Ремонт</li>
+                    <li>Техническое обслуживание </li>
+                </ul>
+            </div>
+            <div class="text-block_buttonwrap">
+                <button class="hero-btn btn btn-lg">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-    </section>
+
 
     <section class="categories-section container-fluid">
         <div class="row">
@@ -889,64 +873,7 @@
     <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.customer-logos').slick({
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                arrows: true,
-                centerPadding: false,
-                // prevArrow: $('.brand-prev'),
-                // nextArrow: $('.brand-next'),
-                dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 1280,
-                    settings: {
-                        slidesToShow: 5
-                    }
-                }, {
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }, {
-                    breakpoint: 620,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }]
-            });
-
-            $('.hero-slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 9999,
-                arrows: false,
-                // prevArrow: $('.brand-prev'),
-                // nextArrow: $('.brand-next'),
-                dots: true,
-                pauseOnHover: false,
-            });
-
-
-            // $('.mobile-nav_button').on('click', function () {
-            //     $('.animated-icon').toggleClass('open');
-            // });
-
-            $('#navbarSupportedContent22').on('hide.bs.collapse', function () {
-                $('.animated-icon').removeClass('open');
-            })
-            $('#navbarSupportedContent22').on('show.bs.collapse', function () {
-                $('.animated-icon').addClass('open');
-            })
-
-
-        }); // $(document).ready
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
