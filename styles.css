@@ -327,6 +327,7 @@
 /* Main Categories */
 .categories-section {
     padding-top: 80px;
+    background-color: #f7faff;
 }
 
 .main-categories_header {
@@ -371,7 +372,7 @@
 /* Slider */
 
 .slick-slide {
-    margin: 0px 20px;
+    margin: 5px 0px;
 }
 
 .slick-slide img {
@@ -483,7 +484,6 @@
 
 .slick-prev {
     left: 40px;
-    ;
 }
 
 .slick-prev:before {
@@ -498,12 +498,10 @@
     content: url('image/main/right.svg');
 }
 
-.cat-bottom {
-    height: 12.6vh;
-}
 
 .cat-bottom img {
     width: 100%;
+    margin-top: -15px;
 }
 
 
@@ -534,10 +532,15 @@
     margin-top: 40px;  
 }
 .advantages-subtitle:after {
-    content: url('image/main/advantages.svg');
+    content: '';
+    background-image: url('image/main/advantages.svg');
     position: absolute;
     margin-left: -324px;
     margin-top: 50px;
+    width: 24vw;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .advantages-subtitle span {
     font-family: IBM Plex Sans;
@@ -662,7 +665,14 @@
     letter-spacing: 0em;
     text-align: left;
 }
-
+.links-section_bottom {
+    background-image: url('image/main/links-section_bottom.png');
+    width: 100%;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -15px;
+}
 
 /* Request section */
 .request-section {
@@ -824,6 +834,8 @@
 .text-section {
     padding-top: 80px;
     padding-bottom: 80px;
+    background-image: url('image/main/text-section_pattern.svg');
+    background-size: cover;
 }
 .text-section_title {
     font-family: IBM Plex Sans;
@@ -861,6 +873,7 @@
     color: #222222;
     box-shadow: 0px 4px 10px 0px #00000040;
     border-radius: 25px;
+    background-color: #fff;
 }
 .text-section_textwrap .p-head {
     font-family: IBM Plex Sans;
@@ -1015,9 +1028,7 @@ footer {
     text-align: left;
     color: #E7E7E7;
 }
-.footer-bottom_right {
 
-}
 .footer-social_button {
     display: inline-block;
     background-repeat: no-repeat;
@@ -1038,7 +1049,9 @@ footer {
     background-image: url('image/main/instagram.svg');
 }
 
-
+.mobile-footer {
+    display: none;
+}
 
 
 
@@ -1059,9 +1072,17 @@ footer {
 
 @media (max-width: 800px) {
     .container-fluid {
-        padding-left: 7vw;
-        padding-right: 7vw;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /* .logo-image_link img {
+        margin-left: 3.12vw;
+    } */
+
     .mobile-hide {
         display: none;
     }
@@ -1082,6 +1103,394 @@ footer {
     .hero-right .text-block_list {
         padding: 0 10vw;
     }
+
+    .main-categories_header {
+        font-size: 32px;
+        line-height: 35px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .new-cat {
+        height: auto;
+        min-height: 21vh;
+        margin-top: 12px;
+    }
+    .newcat-header {
+        padding: 12px 12px 0px 12px;
+        margin: 0px;
+        font-size: 14px;
+        line-height: 16.8px;
+        min-height: auto;
+    }
+    .new-cat_wrap {
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-top: 20px;
+    }
+    .new-cat img {
+        margin: 10px;
+        height: 10vh;
+    }
+    .slick-prev, .slick-next {
+        top: 48%;
+    }
+    .slick-prev {
+        left: 5px;
+    }
+    .slick-next {
+        right: 5px;
+    }
+
+    .customer-logos {
+        padding: 32px 30px;
+    }
+
+
+    .advantages {
+        padding-top: 0px;
+    }
+    .advantages-title {
+        font-family: IBM Plex Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+    }
+    
+    .advantages-subtitle {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .advantages-subtitle span {
+        display: block;
+    }
+    .advantages-subtitle:after  {
+        /* display: none; */
+        /* margin-left: -202px;
+        margin-top: 36px;
+        width: 100%;
+        height: 12px; */
+        margin-left: -260px;
+        width: 70vw;
+    }
+
+    .advantages-row {
+        margin-bottom: 60px;
+    }
+
+    .advantages-card {
+        background-position: 49% 16px;
+    }
+    .advantages-card_title {
+        padding-left: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .advantages-content {
+        margin: 72px 16px 16px 16px;
+    }
+    .advantages-card_list {
+        max-width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 24px 34px;
+    }
+
+    .links-section {
+        padding-top: 40px;
+    }
+    .links-section_title {
+        font-family: IBM Plex Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 0px;
+        text-align: center;
+    }
+    .links-section_left {
+        padding-top: 32px;
+    }
+    .links-section_left a {
+        font-family: IBM Plex Sans;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;        
+    }
+    .links-section_right {
+        padding-top: 32px;
+    }
+
+    .request-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .request-section_title {
+        font-family: IBM Plex Sans;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .request-button_arrow {
+        padding: 10px 70px 16px 70px;
+    }
+    .request-section_text {
+        padding-top: 24px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;        
+    }
+
+
+    .portfolio-section {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .portfolio-section_title {
+        font-family: IBM Plex Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    #pills-tab {
+        padding-top: 32px;
+    }
+    .portfolio-section .nav-link {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-top: 8px;
+    }
+    .portfolio-section .tab-content {
+        padding-top: 16px;
+    }
+    .pr-small {
+        padding-right: 6px;
+    }
+    .pl-small {
+        padding-left: 6px;
+    }
+    .portfolio-section .tab-content .img-wrap {
+        margin-bottom: 12px;
+    }
+
+
+    .articles-section {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .articles-section_header {
+        font-family: IBM Plex Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .articles-section_cardwrap {
+        padding-top: 0;
+    }
+    .articles-section_cardwrap .col-6:nth-child(odd) {
+        padding-right: 6px;
+    }
+    .articles-section_cardwrap .col-6:nth-child(even) {
+        padding-left: 6px;
+    } 
+    .articles-section_card {
+        margin-top: 12px;
+    }
+    .articles-section_cardtext {
+        font-family: IBM Plex Sans;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 8px 8px 16px 8px;
+    }
+
+
+    .text-section {
+        padding-top: 60px;
+    }
+    .text-section_title {
+        font-family: IBM Plex Sans;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 53px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .text-section_subtitle {
+        font-family: IBM Plex Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .sticky-col {
+        display: none;
+    }
+
+
+    .mobile-footer {
+        display: block;
+    }
+    .footer-mobile_form {
+        height: 30vh;
+        background-image: url('image/main/footer-form_mobile1.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .footer-mobile_form-head {
+        padding: 32px 20px 0px 20px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #F7FAFF;
+    }
+    .footer-mobile_form-input {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+    }
+    .footer-mobile_form-input input {
+        border-radius: 8px;
+        border: 0px;
+        width: 100%;
+        text-indent: 10px;
+        height: 44px;
+    }
+    .mobile-footer-form_button-wrap {
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 16px;
+    }
+    .mobile-footer-form_button {
+        background-color: #38B92C;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 8px 20px;
+    }
+    .mobile-footer_body {
+        background-color: #052143;
+        padding-top: 32px;
+        padding-bottom: 60px;
+    }
+    .mobile-footer-call_text {
+        font-family: IBM Plex Sans;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .mobile-footer-call_wrap {
+        padding-top: 24px;
+        padding-bottom: 32px;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .mobile-footer-center {
+        border-top: 3px solid #F7FAFF;
+        border-bottom: 3px solid #F7FAFF;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    #footer-collapsed-nav button {
+        font-family: IBM Plex Sans;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        border: none;
+        background-color: transparent;
+    }
+    #footer-collapsed-nav .nav-link {
+        font-family: IBM Plex Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        border: none;
+        background-color: transparent;
+    }
+    .footer-collapsed-nav_icon {
+        background-image: url('image/main/angle-right.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        left: 16px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile-footer-bottom {
+        padding-top: 34px;
+    }
+    .mobile-footer_cp {
+        padding-top: 32px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #E7E7E7;
+        text-align: center;
+    }
+    .mobile-footer_social {
+        padding-top: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 400px) {
