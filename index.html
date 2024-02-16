@@ -61,38 +61,114 @@
                     </a>
 
                     <button class="navbar-toggler mobile-nav_button" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent22" aria-controls="navbarSupportedContent22"
+                        data-target="#mob-nav_collapsable" aria-controls="mob-nav_collapsable"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <div class="animated-icon"><span></span><span></span><span></span></div>
                     </button>
                 </div>
             </div>
 
+            <div class="collapse navbar-collapse" id="mob-nav_collapsable">
+                <div class="mob-navwrap">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+                    <ul id="mobile-accordion-top" class="static-menu">
+                        <li>
+                            <div class="category">
+                                <div>Видеонаблюдение</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category">
+                                <div>Контроль доступа</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category">
+                                <div>Домофоны</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category">
+                                <div>Услуги</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <div class="category">Menu 2</div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
 
-                <ul class="navbar-nav text-center">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">Видеонаблюдение</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контроль доступа</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Домофоны</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Услуги</a>
-                    </li>
-                </ul>
+                    <div class="mob-navwrap_buttons">
+                        <a class="mob-fav" href="#">
+                            <span></span>
+                        </a>
+                        <a class="mob-compare" href="#">
+                            <span></span>
+                        </a>
+                        <a class="mob-login" href="#">
+                            <span></span>
+                            Вход
+                        </a>
+                    </div>
+
+                    <div class="mob-navwrap_bottomhead">
+                        Доп инфа
+                    </div>
+
+
+                    <ul id="mobile-accordion-bottom" class="static-menu">
+                        <li>
+                            <div class="category">
+                                <div>Доп инфа</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">О нас</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </div>
+
             </div>
 
         </nav>
@@ -151,25 +227,159 @@
                 </div>
                 <div class="mainmenu-wrap">
                     <ul class="nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">Видеонаблюдение</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
+                        <li class="nav-item">
+                            <a class="nav-link hidden-menu_trigger" href="#">Видеонаблюдение</a>
+                            <div class="hidden-menu_wrap">
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card">
+                                        <div class="hidden-menu_card-head">
+                                            qwdfwed ewdfwe
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Контроль доступа</a>
+                            <a class="nav-link hidden-menu_trigger" href="#">Контроль доступа</a>
+                            <div class="hidden-menu_wrap">
+                                <ul>
+                                    <li><a href="#">Контроль доступа</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Домофоны</a>
+                            <a class="nav-link hidden-menu_trigger" href="#">Домофоны</a>
+                            <div class="hidden-menu_wrap">
+                                <ul>
+                                    <li><a href="#">Домофоны</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Услуги</a>
+                            <a class="nav-link hidden-menu_trigger">Услуги</a>
+                            <div class="hidden-menu_wrap">
+                                <ul>
+                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
