@@ -65,7 +65,7 @@ $(document).ready(function () {
         })
     })
 
-    // 
+    // Sticky navbar
     var $navbar = $("#navbar"),
         y_pos = $navbar.offset().top,
         height = $navbar.height();
@@ -79,6 +79,24 @@ $(document).ready(function () {
             });
         } else if (scrollTop <= y_pos) {
             $navbar.removeClass("navbar-fixed").clearQueue().animate({
+                top: "-48px"
+            }, 0);
+        }
+    });
+
+    var $mobnavbar = $("#mob-nav"),
+        y_pos = $mobnavbar.offset().top,
+        height = $mobnavbar.height();
+
+    $(document).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > y_pos + height) {
+            $mobnavbar.addClass("navbar-fixed").animate({
+                top: 0
+            });
+        } else if (scrollTop <= y_pos) {
+            $mobnavbar.removeClass("navbar-fixed").clearQueue().animate({
                 top: "-48px"
             }, 0);
         }
