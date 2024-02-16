@@ -1049,11 +1049,11 @@ ul.static-menu,
     padding: 0px 16vw;
 }
 
-.links-section_left {
+.links-section_ul {
     padding-top: 60px;
 }
 
-.links-section_left a {
+.links-section_ul a {
     color: #222222;
     font-family: IBM Plex Sans;
     font-size: 32px;
@@ -1063,11 +1063,11 @@ ul.static-menu,
     text-align: left;
 }
 
-.links-section_left li {
+.links-section_ul li {
     padding-bottom: 12px;
 }
 
-.links-section_right {
+.links-section_text {
     padding-top: 128px;
     color: #696969;
     font-family: Roboto;
@@ -1076,6 +1076,10 @@ ul.static-menu,
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
+    padding-top: 60px;
+}
+.links-section_image {
+    padding-top: 60px;
 }
 
 .links-section_bottom {
@@ -1838,6 +1842,12 @@ footer {
         padding: 0px;
         text-align: center;
     }
+    .links-section_ul a {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+    }
 
     .links-section_left {
         padding-top: 32px;
@@ -1850,6 +1860,15 @@ footer {
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
+    }
+    .links-section_text {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #696969;
     }
 
     .links-section_right {
@@ -2012,7 +2031,8 @@ footer {
         height: 30vh;
         background-image: url('image/main/footer-form_mobile1.svg');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        background-position-x: center;
     }
 
     .footer-mobile_form-head {
@@ -2044,6 +2064,7 @@ footer {
         align-content: center;
         justify-content: center;
         padding-bottom: 16px;
+        padding-top: 16px;
     }
 
     .mobile-footer-form_button {
