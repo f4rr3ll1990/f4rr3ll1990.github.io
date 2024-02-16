@@ -335,8 +335,9 @@
 }
 
 .mob-nav .mob-navwrap {
-    min-height: 87.8vh;
+    min-height: 93.4vh;
     padding-top: 8px;
+    overflow-y: scroll;
 }
 
 .mobile-nav_button {
@@ -748,7 +749,7 @@ ul.static-menu,
     border-radius: 5px;
     height: 3.1vh;
     min-height: 300px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .newcat-header {
@@ -1713,7 +1714,7 @@ footer {
     .new-cat_wrap {
         padding-left: 6px;
         padding-right: 6px;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 
     .new-cat img {
@@ -1976,6 +1977,7 @@ footer {
 
     .text-section {
         padding-top: 60px;
+        background-image: none;
     }
 
     .text-section_title {
