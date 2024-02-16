@@ -335,9 +335,10 @@
 }
 
 .mob-nav .mob-navwrap {
-    min-height: 93.4vh;
+    height: 93.4vh;
     padding-top: 8px;
     overflow-y: scroll;
+    padding-bottom: 15px;
 }
 
 .mobile-nav_button {
