@@ -271,6 +271,7 @@
     height: 5.6vh;
     display: none;
 }
+
 .topbuttons-wrap ul {
     justify-content: space-between;
 }
@@ -302,11 +303,13 @@
     height: 24px;
     padding-left: 0px !important;
 }
+
 .mobile-cartbtn_total {
     padding-left: 0px !important;
     position: relative;
     top: -3px;
 }
+
 .mobile-search_icon {
     background-image: url('image/main/search.svg');
     background-repeat: no-repeat;
@@ -325,6 +328,7 @@
 .mobile-buttons_right {
     display: flex;
 }
+
 .mobile-buttons_right a {
     padding: 0px 12px;
 }
@@ -367,6 +371,7 @@
     height: 10px;
     transform: rotate(180deg);
 }
+
 .open .biglink_icon {
     transform: rotate(0deg);
 }
@@ -446,6 +451,7 @@ ul.static-menu,
     display: flex;
     justify-content: space-around;
 }
+
 .mob-fav span {
     display: block;
     background-image: url('image/main/favorite.svg');
@@ -455,6 +461,7 @@ ul.static-menu,
     width: 66px;
     height: 40px;
 }
+
 .mob-compare span {
     display: block;
     background-image: url('image/main/balance.svg');
@@ -464,6 +471,7 @@ ul.static-menu,
     width: 66px;
     height: 40px;
 }
+
 .mob-login {
     font-family: Roboto;
     font-size: 18px;
@@ -475,6 +483,7 @@ ul.static-menu,
     padding: 8px 24px;
     border: 1px solid #083A74
 }
+
 .mob-login span {
     display: inline-block;
     background-image: url('image/main/person.svg');
@@ -1247,6 +1256,16 @@ ul.static-menu,
     color: #000000;
 }
 
+.articles-section_cardwrap .slick-prev:before {
+    content: url('image/main/left_white.svg');
+    display: none;
+}
+
+.articles-section_cardwrap .slick-next:before {
+    content: url('image/main/right_white.svg');
+    display: none;
+}
+
 /* Text-section */
 .text-section {
     padding-top: 80px;
@@ -1583,6 +1602,21 @@ footer {
         top: 48%;
     }
 
+    .articles-section_cardwrap .slick-prev,
+    .articles-section_cardwrap .slick-next {
+        top: 10%;
+    }
+
+    .articles-section_cardwrap .slick-prev:before {
+        content: url('image/main/left_white.svg');
+        display: block;
+    }
+
+    .articles-section_cardwrap .slick-next:before {
+        content: url('image/main/right_white.svg');
+        display: block;
+    }
+
     .slick-prev {
         left: 5px;
     }
@@ -1785,7 +1819,7 @@ footer {
     }
 
     .articles-section_cardwrap {
-        padding-top: 0;
+        padding-top: 70px;
     }
 
     .articles-section_cardwrap .col-6:nth-child(odd) {
