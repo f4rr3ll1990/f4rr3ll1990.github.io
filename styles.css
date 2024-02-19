@@ -1920,11 +1920,94 @@ footer {
     color: #222222;
     padding: 16px 14px;
 }
+.category-card_footer {
+    padding: 16px;
+}
 
-
-
-
-
+.category-card_rating {
+    display: flex;
+    justify-content: space-between;
+}
+.category-card_rating-star {
+    background-image: url('image/cat/star-full.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+}
+.category-card_rating-value {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+}
+.category-card_rating-count {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #207DE9;
+    padding-top: 1px;
+}
+.category-card_price {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.category-card_price-val {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+}
+.category-card_buy button {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px 4px 24px;
+    background-color: #38B92C;
+}
+.category-card_buy button span{
+    background-image: url('image/cat/shopping-cart.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.category-card_stock {
+    padding-top: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222222;
+}
+.category-card_stock span {
+    background-image: url('image/cat/in-stock.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    right: 5px;
+}
 
 
 
