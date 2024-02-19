@@ -1865,6 +1865,80 @@ footer {
     padding-left: 6px;
 }
 
+.category-header {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.category-sort select {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    padding: 9px 12px 9px 9px;
+    border: none;
+    border-radius: 8px;
+    border-right: 12px solid transparent;
+    margin-right: 20px;
+}
+.category-sort select:focus-visible {
+    outline: none;
+}
+.category-sort button {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #207DE9;
+    padding: 7px 12px 9px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.category-sort button span {
+    background-image: url('image/cat/scales-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+}
+
+.cat-row_btn {
+    border: none;
+    background-color: transparent;
+    padding: 10px 7px;
+}
+.cat-row_btn span {
+    background-image: url('image/cat/cat-row.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+}
+.cat-grid_btn {
+    background-image: url('image/cat/cat-grid.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+}
+
 .category-left_row {
     padding: 16px;
     background-color: #D8D0D0;
