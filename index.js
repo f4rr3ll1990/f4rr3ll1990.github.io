@@ -36,6 +36,7 @@ $(document).ready(function () {
 
         var accordiontop = new Accordion($('#mobile-accordion-top'), false);
         var accordionbottom = new Accordion($('#mobile-accordion-bottom'), false);
+        // var accordionbottom = new Accordion($('#category-left_links'), false);
     });
 
     // DESKTOP MENU
