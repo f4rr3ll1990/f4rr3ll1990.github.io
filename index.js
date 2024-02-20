@@ -180,6 +180,7 @@ $(document).ready(function () {
 
     $("#cat-line").click(function() {
         $(".cat-product-col").removeClass('col-lg-3')
+        $(".cat-product-col").removeClass('col-grid')
         $(".cat-product-col").addClass('col-lg-12')
         $(".cat-product-col").addClass('col-line')
     })
@@ -188,6 +189,7 @@ $(document).ready(function () {
         $(".cat-product-col").removeClass('col-line')
         $(".cat-product-col").removeClass('col-lg-12')
         $(".cat-product-col").addClass('col-lg-3')
+        $(".cat-product-col").addClass('col-grid')
     })
 
 
