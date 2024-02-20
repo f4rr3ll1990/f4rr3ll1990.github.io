@@ -178,4 +178,17 @@ $(document).ready(function () {
     });
 
 
+    $("#cat-line").click(function() {
+        $(".cat-product-col").removeClass('col-lg-3')
+        $(".cat-product-col").addClass('col-lg-12')
+        $(".cat-product-col").addClass('col-line')
+    })
+
+    $("#cat-grid").click(function() {
+        $(".cat-product-col").removeClass('col-line')
+        $(".cat-product-col").removeClass('col-lg-12')
+        $(".cat-product-col").addClass('col-lg-3')
+    })
+
+
 }); // $(document).ready
