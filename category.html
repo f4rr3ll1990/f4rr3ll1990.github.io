@@ -427,7 +427,7 @@
         </div>
 
         <div class="row category_main-row">
-            <div class="col-lg-3 col-p12">
+            <div class="col-lg-3 col-p12 mobile-hide">
                 <div class="row category-left_row nom">
 
                     <div class="accordion" id="category-left_links">
@@ -464,10 +464,11 @@
                 </div>
             </div>
             <div class="col-lg-9 col-p12">
-                <div class="row nom">
+                <div class="row nom category_title-wrap">
                     <div class="category_title">
                         Камеры видеонаблюдения
                     </div>
+                    <div class="category_product-count">99 шт.</div>
                 </div>
                 <div class="row category-cards_row nom">
                     <div class="col-lg-12 p-0">
@@ -481,9 +482,9 @@
                                     <option value="value2" selected>Весь товар</option>
                                     <option value="value3">Значение 3</option>
                                 </select>
-                                <button><span></span> Сравнить все</button>
+                                <button class="mobile-hide"><span></span> Сравнить все</button>
                             </div>
-                            <div class="category-buttons">
+                            <div class="category-buttons mobile-hide">
                                 <button id="cat-line" class="cat-row_btn"><span></span></button>
                                 <button id="cat-grid" class="cat-grid_btn"><span></span></button>
                             </div>
@@ -497,6 +498,7 @@
                             <div class="category-card_imagewrap">
                                 <img src="image/cat/test-product.png" alt="" class="img-fluid">
                             </div>
+                            
                             <div class="category-card_body">
                                 <div class="category-card_caption">
                                     Камера видеонаблюдения TP-LinkTapo C200
@@ -508,16 +510,22 @@
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
-                                    </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
                                     </div>
                                     <div class="category-card_rating-count">
-                                        9 отзыва
+                                        9 <span class="mobile-hide">отзыва</span>
                                     </div>
                                     <div class="category-card_stock stock-line">
                                         <span></span> в наличии
                                     </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
+                                    <span></span> в наличии
                                 </div>
                                 <div class="category-card_optons">
 
@@ -582,7 +590,7 @@
                                     код : 8888888
                                 </div>
                                 <div class="category-card_price">
-                                    <div class="category-card_price-val">
+                                    <div class="category-card_price-val mobile-hide">
                                         9 999 грн
                                     </div>
                                     <div class="category-card_buy">
@@ -590,12 +598,14 @@
                                                 class="category-card_buy-text">В корзину</span></button>
                                     </div>
                                 </div>
-                                <div class="category-card_stock stock-grid">
-                                    <span></span> в наличии
-                                </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
+                                    </div>
+                                    <div class="category-card_stock stock-grid  mobile-hide">
+                                        <span></span> в наличии
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -606,6 +616,7 @@
                             <div class="category-card_imagewrap">
                                 <img src="image/cat/test-product.png" alt="" class="img-fluid">
                             </div>
+                            
                             <div class="category-card_body">
                                 <div class="category-card_caption">
                                     Камера видеонаблюдения TP-LinkTapo C200
@@ -617,16 +628,22 @@
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
-                                    </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
                                     </div>
                                     <div class="category-card_rating-count">
-                                        9 отзыва
+                                        9 <span class="mobile-hide">отзыва</span>
                                     </div>
                                     <div class="category-card_stock stock-line">
                                         <span></span> в наличии
                                     </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
+                                    <span></span> в наличии
                                 </div>
                                 <div class="category-card_optons">
 
@@ -691,7 +708,7 @@
                                     код : 8888888
                                 </div>
                                 <div class="category-card_price">
-                                    <div class="category-card_price-val">
+                                    <div class="category-card_price-val mobile-hide">
                                         9 999 грн
                                     </div>
                                     <div class="category-card_buy">
@@ -699,228 +716,14 @@
                                                 class="category-card_buy-text">В корзину</span></button>
                                     </div>
                                 </div>
-                                <div class="category-card_stock stock-grid">
-                                    <span></span> в наличии
-                                </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cat-product-col col-p4 col-lg-3 col-grid">
-                        <div class="category-card-grid_item">
-                            <div class="category-card_imagewrap">
-                                <img src="image/cat/test-product.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="category-card_body">
-                                <div class="category-card_caption">
-                                    Камера видеонаблюдения TP-LinkTapo C200
-                                </div>
-                                <div class="category-card_rating">
-                                    <div class="category-card_rating-stars">
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
                                     </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
-                                    </div>
-                                    <div class="category-card_rating-count">
-                                        9 отзыва
-                                    </div>
-                                    <div class="category-card_stock stock-line">
+                                    <div class="category-card_stock stock-grid  mobile-hide">
                                         <span></span> в наличии
                                     </div>
-                                </div>
-                                <div class="category-card_optons">
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Матрица:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            2МП CMOS
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Разрешение:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            1920х1080
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Тип подсветки:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            ИК
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Дальность подсветки:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            20 м
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Фокусное расстояние:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            2.8 мм
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Углы обзора:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            120
-                                        </span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="category-card_footer">
-                                <div class="product-model">
-                                    код : 8888888
-                                </div>
-                                <div class="category-card_price">
-                                    <div class="category-card_price-val">
-                                        9 999 грн
-                                    </div>
-                                    <div class="category-card_buy">
-                                        <button><span class="category-card_buy-icon"></span><span
-                                                class="category-card_buy-text">В корзину</span></button>
-                                    </div>
-                                </div>
-                                <div class="category-card_stock stock-grid">
-                                    <span></span> в наличии
-                                </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cat-product-col col-p4 col-lg-3 col-grid">
-                        <div class="category-card-grid_item">
-                            <div class="category-card_imagewrap">
-                                <img src="image/cat/test-product.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="category-card_body">
-                                <div class="category-card_caption">
-                                    Камера видеонаблюдения TP-LinkTapo C200
-                                </div>
-                                <div class="category-card_rating">
-                                    <div class="category-card_rating-stars">
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
-                                        <span class="category-card_rating-star"></span>
-                                    </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
-                                    </div>
-                                    <div class="category-card_rating-count">
-                                        9 отзыва
-                                    </div>
-                                    <div class="category-card_stock stock-line">
-                                        <span></span> в наличии
-                                    </div>
-                                </div>
-                                <div class="category-card_optons">
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Матрица:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            2МП CMOS
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Разрешение:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            1920х1080
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Тип подсветки:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            ИК
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Дальность подсветки:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            20 м
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Фокусное расстояние:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            2.8 мм
-                                        </span>
-                                    </div>
-
-                                    <div class="category-card_option">
-                                        <span class="category-card_op-name">
-                                            Углы обзора:
-                                        </span>
-                                        <span class="category-card_op-value">
-                                            120
-                                        </span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="category-card_footer">
-                                <div class="product-model">
-                                    код : 8888888
-                                </div>
-                                <div class="category-card_price">
-                                    <div class="category-card_price-val">
-                                        9 999 грн
-                                    </div>
-                                    <div class="category-card_buy">
-                                        <button><span class="category-card_buy-icon"></span><span
-                                                class="category-card_buy-text">В корзину</span></button>
-                                    </div>
-                                </div>
-                                <div class="category-card_stock stock-grid">
-                                    <span></span> в наличии
-                                </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
                                 </div>
                             </div>
                         </div>
@@ -931,6 +734,7 @@
                             <div class="category-card_imagewrap">
                                 <img src="image/cat/test-product.png" alt="" class="img-fluid">
                             </div>
+                            
                             <div class="category-card_body">
                                 <div class="category-card_caption">
                                     Камера видеонаблюдения TP-LinkTapo C200
@@ -942,16 +746,22 @@
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
-                                    </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
                                     </div>
                                     <div class="category-card_rating-count">
-                                        9 отзыва
+                                        9 <span class="mobile-hide">отзыва</span>
                                     </div>
                                     <div class="category-card_stock stock-line">
                                         <span></span> в наличии
                                     </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
+                                    <span></span> в наличии
                                 </div>
                                 <div class="category-card_optons">
 
@@ -1016,7 +826,7 @@
                                     код : 8888888
                                 </div>
                                 <div class="category-card_price">
-                                    <div class="category-card_price-val">
+                                    <div class="category-card_price-val mobile-hide">
                                         9 999 грн
                                     </div>
                                     <div class="category-card_buy">
@@ -1024,12 +834,14 @@
                                                 class="category-card_buy-text">В корзину</span></button>
                                     </div>
                                 </div>
-                                <div class="category-card_stock stock-grid">
-                                    <span></span> в наличии
-                                </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
+                                    </div>
+                                    <div class="category-card_stock stock-grid  mobile-hide">
+                                        <span></span> в наличии
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1040,6 +852,7 @@
                             <div class="category-card_imagewrap">
                                 <img src="image/cat/test-product.png" alt="" class="img-fluid">
                             </div>
+                            
                             <div class="category-card_body">
                                 <div class="category-card_caption">
                                     Камера видеонаблюдения TP-LinkTapo C200
@@ -1051,16 +864,22 @@
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
-                                    </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
                                     </div>
                                     <div class="category-card_rating-count">
-                                        9 отзыва
+                                        9 <span class="mobile-hide">отзыва</span>
                                     </div>
                                     <div class="category-card_stock stock-line">
                                         <span></span> в наличии
                                     </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
+                                    <span></span> в наличии
                                 </div>
                                 <div class="category-card_optons">
 
@@ -1125,7 +944,7 @@
                                     код : 8888888
                                 </div>
                                 <div class="category-card_price">
-                                    <div class="category-card_price-val">
+                                    <div class="category-card_price-val mobile-hide">
                                         9 999 грн
                                     </div>
                                     <div class="category-card_buy">
@@ -1133,12 +952,14 @@
                                                 class="category-card_buy-text">В корзину</span></button>
                                     </div>
                                 </div>
-                                <div class="category-card_stock stock-grid">
-                                    <span></span> в наличии
-                                </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
+                                    </div>
+                                    <div class="category-card_stock stock-grid  mobile-hide">
+                                        <span></span> в наличии
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1149,6 +970,7 @@
                             <div class="category-card_imagewrap">
                                 <img src="image/cat/test-product.png" alt="" class="img-fluid">
                             </div>
+                            
                             <div class="category-card_body">
                                 <div class="category-card_caption">
                                     Камера видеонаблюдения TP-LinkTapo C200
@@ -1160,16 +982,22 @@
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
-                                    </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
                                     </div>
                                     <div class="category-card_rating-count">
-                                        9 отзыва
+                                        9 <span class="mobile-hide">отзыва</span>
                                     </div>
                                     <div class="category-card_stock stock-line">
                                         <span></span> в наличии
                                     </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
+                                    <span></span> в наличии
                                 </div>
                                 <div class="category-card_optons">
 
@@ -1234,7 +1062,7 @@
                                     код : 8888888
                                 </div>
                                 <div class="category-card_price">
-                                    <div class="category-card_price-val">
+                                    <div class="category-card_price-val mobile-hide">
                                         9 999 грн
                                     </div>
                                     <div class="category-card_buy">
@@ -1242,12 +1070,14 @@
                                                 class="category-card_buy-text">В корзину</span></button>
                                     </div>
                                 </div>
-                                <div class="category-card_stock stock-grid">
-                                    <span></span> в наличии
-                                </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
+                                    </div>
+                                    <div class="category-card_stock stock-grid  mobile-hide">
+                                        <span></span> в наличии
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1258,6 +1088,7 @@
                             <div class="category-card_imagewrap">
                                 <img src="image/cat/test-product.png" alt="" class="img-fluid">
                             </div>
+                            
                             <div class="category-card_body">
                                 <div class="category-card_caption">
                                     Камера видеонаблюдения TP-LinkTapo C200
@@ -1269,16 +1100,22 @@
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
                                         <span class="category-card_rating-star"></span>
-                                    </div>
-                                    <div class="category-card_rating-value">
-                                        4.1
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
                                     </div>
                                     <div class="category-card_rating-count">
-                                        9 отзыва
+                                        9 <span class="mobile-hide">отзыва</span>
                                     </div>
                                     <div class="category-card_stock stock-line">
                                         <span></span> в наличии
                                     </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
+                                    <span></span> в наличии
                                 </div>
                                 <div class="category-card_optons">
 
@@ -1343,7 +1180,7 @@
                                     код : 8888888
                                 </div>
                                 <div class="category-card_price">
-                                    <div class="category-card_price-val">
+                                    <div class="category-card_price-val mobile-hide">
                                         9 999 грн
                                     </div>
                                     <div class="category-card_buy">
@@ -1351,12 +1188,250 @@
                                                 class="category-card_buy-text">В корзину</span></button>
                                     </div>
                                 </div>
-                                <div class="category-card_stock stock-grid">
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
+                                    </div>
+                                    <div class="category-card_stock stock-grid  mobile-hide">
+                                        <span></span> в наличии
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-product-col col-p4 col-lg-3 col-grid">
+                        <div class="category-card-grid_item">
+                            <div class="category-card_imagewrap">
+                                <img src="image/cat/test-product.png" alt="" class="img-fluid">
+                            </div>
+                            
+                            <div class="category-card_body">
+                                <div class="category-card_caption">
+                                    Камера видеонаблюдения TP-LinkTapo C200
+                                </div>
+                                <div class="category-card_rating">
+                                    <div class="category-card_rating-stars">
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
+                                    </div>
+                                    <div class="category-card_rating-count">
+                                        9 <span class="mobile-hide">отзыва</span>
+                                    </div>
+                                    <div class="category-card_stock stock-line">
+                                        <span></span> в наличии
+                                    </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
                                     <span></span> в наличии
                                 </div>
-                                <div class="line-buttons">
-                                    <button class="category-card-fav_btn"><span></span></button>
-                                    <button class="category-card-comp_btn"><span></span></button>
+                                <div class="category-card_optons">
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Матрица:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            2МП CMOS
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Разрешение:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            1920х1080
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Тип подсветки:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            ИК
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Дальность подсветки:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            20 м
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Фокусное расстояние:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            2.8 мм
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Углы обзора:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            120
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="category-card_footer">
+                                <div class="product-model">
+                                    код : 8888888
+                                </div>
+                                <div class="category-card_price">
+                                    <div class="category-card_price-val mobile-hide">
+                                        9 999 грн
+                                    </div>
+                                    <div class="category-card_buy">
+                                        <button><span class="category-card_buy-icon"></span><span
+                                                class="category-card_buy-text">В корзину</span></button>
+                                    </div>
+                                </div>
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
+                                    </div>
+                                    <div class="category-card_stock stock-grid  mobile-hide">
+                                        <span></span> в наличии
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cat-product-col col-p4 col-lg-3 col-grid">
+                        <div class="category-card-grid_item">
+                            <div class="category-card_imagewrap">
+                                <img src="image/cat/test-product.png" alt="" class="img-fluid">
+                            </div>
+                            
+                            <div class="category-card_body">
+                                <div class="category-card_caption">
+                                    Камера видеонаблюдения TP-LinkTapo C200
+                                </div>
+                                <div class="category-card_rating">
+                                    <div class="category-card_rating-stars">
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <span class="category-card_rating-star"></span>
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
+                                    </div>
+                                    <div class="category-card_rating-count">
+                                        9 <span class="mobile-hide">отзыва</span>
+                                    </div>
+                                    <div class="category-card_stock stock-line">
+                                        <span></span> в наличии
+                                    </div>
+                                </div>
+                                <div class="category-card_price-val mobile-show">
+                                    9 999 грн
+                                </div>
+                                <div class="category-card_stock stock-line mobile-show">
+                                    <span></span> в наличии
+                                </div>
+                                <div class="category-card_optons">
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Матрица:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            2МП CMOS
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Разрешение:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            1920х1080
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Тип подсветки:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            ИК
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Дальность подсветки:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            20 м
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Фокусное расстояние:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            2.8 мм
+                                        </span>
+                                    </div>
+
+                                    <div class="category-card_option">
+                                        <span class="category-card_op-name">
+                                            Углы обзора:
+                                        </span>
+                                        <span class="category-card_op-value">
+                                            120
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="category-card_footer">
+                                <div class="product-model">
+                                    код : 8888888
+                                </div>
+                                <div class="category-card_price">
+                                    <div class="category-card_price-val mobile-hide">
+                                        9 999 грн
+                                    </div>
+                                    <div class="category-card_buy">
+                                        <button><span class="category-card_buy-icon"></span><span
+                                                class="category-card_buy-text">В корзину</span></button>
+                                    </div>
+                                </div>
+                                <div class="line-buttons_hover-wrap">
+                                    <div class="line-buttons">
+                                        <button class="category-card-fav_btn"><span></span></button>
+                                        <button class="category-card-comp_btn"><span></span></button>
+                                    </div>
+                                    <div class="category-card_stock stock-grid  mobile-hide">
+                                        <span></span> в наличии
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1373,7 +1448,41 @@
                         </div>
                     </div>
                     <div class="row nom user-history_row">
-                        <div class="col-lg-3 col-p4">
+                        <div class="col-6 col-lg-3 col-p4">
+                            <div class="category-simple_card">
+                                <div class="category-card_imagewrap">
+                                    <img src="image/cat/test-product2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="category-card_body">
+                                    <div class="category-card_caption">
+                                        Камера видеонаблюдения TP-LinkTapo C200
+                                    </div>
+                                    <div class="category-card_rating">
+                                        <div class="category-card_rating-stars">
+                                            <span class="category-card_rating-star"></span>
+                                            <span class="category-card_rating-star"></span>
+                                            <span class="category-card_rating-star"></span>
+                                            <span class="category-card_rating-star"></span>
+                                            <span class="category-card_rating-star"></span>
+                                        </div>
+                                        <div class="category-card_rating-value">
+                                            4.1
+                                        </div>
+                                        <div class="category-card_rating-count">
+                                            9 отзыва
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-card_footer">
+                                    <div class="category-card_price">
+                                        <div class="category-card_price-val">
+                                            9 999 грн
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-p4">
                             <div class="category-simple_card">
                                 <div class="category-card_imagewrap">
                                     <img src="image/cat/test-product2.png" alt="" class="img-fluid">
