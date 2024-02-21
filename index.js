@@ -178,19 +178,93 @@ $(document).ready(function () {
     });
 
 
-    $("#cat-line").click(function() {
+
+    // Category grid/line view
+    $("#cat-line").click(function () {
         $(".cat-product-col").removeClass('col-lg-3')
         $(".cat-product-col").removeClass('col-grid')
         $(".cat-product-col").addClass('col-lg-12')
         $(".cat-product-col").addClass('col-line')
     })
 
-    $("#cat-grid").click(function() {
+    $("#cat-grid").click(function () {
         $(".cat-product-col").removeClass('col-line')
         $(".cat-product-col").removeClass('col-lg-12')
         $(".cat-product-col").addClass('col-lg-3')
         $(".cat-product-col").addClass('col-grid')
     })
 
+
+
+
+    // Product images
+    $(".product-small_image").click(function () {
+        // console.log($(this).find("img").attr("src"))
+        $(".product-small_image").removeClass("active-image")
+        $(this).addClass("active-image")
+        $(".product-big_image img").attr("src", $(this).find("img").attr("src"))
+    })
+
+
+
+    // Product qtty
+    var buttonPlus = $(".qty-btn-plus");
+    var buttonMinus = $(".qty-btn-minus");
+    var incrementPlus = buttonPlus.click(function () {
+        var $n = $(this)
+            .parent(".qty-container")
+            .find(".input-qty");
+        $n.val(Number($n.val()) + 1);
+    });
+    var incrementMinus = buttonMinus.click(function () {
+        var $n = $(this)
+            .parent(".qty-container")
+            .find(".input-qty");
+        var amount = Number($n.val());
+        if (amount > 0) {
+            $n.val(amount - 1);
+        }
+    });
+
+
+
+    // Product tab buttons
+    $('.pills-options_btn-col .btn').click(function() {
+        $('#pills-options-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.recomended-row_title-col .btn').click(function() {
+        $('#pills-accessories-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+
+    $('.product-sticky_view').click(function() {
+        $('#pills-main-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.product-sticky_options').click(function() {
+        $('#pills-options-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.product-sticky_accetories').click(function() {
+        $('#pills-accessories-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.product-sticky_reviews').click(function() {
+        $('#pills-reviews-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.revtab-link').click(function() {
+        $('#pills-reviews-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+
+    // 
+    $('#pills-main-tab').on('shown.bs.tab', function (event) {
+        $('.product-char_preview').show()
+    })
+    $('#pills-main-tab').on('hidden.bs.tab', function (event) {
+        $('.product-char_preview').hide()
+    })
 
 }); // $(document).ready
