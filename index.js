@@ -177,6 +177,35 @@ $(document).ready(function () {
         }]
     });
 
+    $('.user-history_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: true,
+        centerPadding: false,
+        // prevArrow: $('.brand-prev'),
+        // nextArrow: $('.brand-next'),
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 620,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+
     $('.mobile-slideshow').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
