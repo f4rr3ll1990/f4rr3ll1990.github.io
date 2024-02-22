@@ -433,7 +433,7 @@
         </div>
 
         <div class="row product_main-row">
-            <div class="col-lg-9 offset-lg-3 col-p12">
+            <div class="col-lg-9 offset-lg-3 col-p12 mobile-hide">
                 <ul class="nav nav-pills nav-fill" id="product-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-main-tab" data-toggle="pill" data-target="#pills-main"
@@ -455,13 +455,14 @@
                 </ul>
             </div>
 
-            <div class="col-lg-7">
+            <div class="col-lg-7 product-tab_col">
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
 
                         <div class="row pills-main_row">
-                            <div class="product-images_wrap">
+                            <div class="product-images_wrap  mobile-hide">
                                 <div class="row">
+
                                     <div class="col-lg-2 product-images_nav">
                                         <div class="product-small_image active-image">
                                             <img src="image/main/Rectangle 362 (3).png" alt="" class="img-fluid">
@@ -476,9 +477,11 @@
                                             <img src="image/prod/product_test.png" alt="" class="img-fluid">
                                         </div>
                                     </div>
+
                                     <div class="col-lg-10 product-big_image">
                                         <img src="image/prod/product_test.png" alt="" class="img-fluid">
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -488,28 +491,28 @@
                         <div class="row pills-options_row">
 
                             <div class="options-tab_item">
-                                <div>Угол обзора</div>
+                                <div>Угол обзора:</div>
                                 <div>115°</div>
                             </div>
 
                             <div class="options-tab_item">
-                                <div>Разрешающая способность камеры</div>
+                                <div>Разрешающая способность камеры:</div>
                                 <div>2 MП</div>
                             </div>
                             <div class="options-tab_item">
-                                <div>Цветность камеры</div>
+                                <div>Цветность камеры:</div>
                                 <div>цветная</div>
                             </div>
                             <div class="options-tab_item">
-                                <div>Тип установки</div>
+                                <div>Тип установки:</div>
                                 <div>внутренняя</div>
                             </div>
                             <div class="options-tab_item">
-                                <div>Матрица</div>
+                                <div>Матрица:</div>
                                 <div>1/2.7" progressive Scan CMOS°</div>
                             </div>
                             <div class="options-tab_item">
-                                <div>Максимальное разрешение изображения</div>
+                                <div>Максимальное разрешение изображения:</div>
                                 <div>1920x1080</div>
                             </div>
 
@@ -604,7 +607,7 @@
                     <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab">
                         <div class="row pills-reviews_row">
 
-                            <div class="add-review_wrap">
+                            <div class="add-review_wrap mobile-hide">
                                 <input type="text" class="add-review_input" placeholder="Оставьте свой отзыв об этом товаре">
                                 <div><button class="add-review_btn">Написать отзыв</button></div>
                             </div>
@@ -759,6 +762,25 @@
                 <div class="row product-info_title-row">
                     <div class="product-title_h1">2 Мп Wi-Fi IP-видеокамера Imou Bullet 2Е (IPC-F22FP) 2.8 мм</div>
                 </div>
+
+                <div class="row mobile-slideshow mobile-show">
+
+                    <div class="col-6 mobile-slideshow_item">
+                        <img src="image/prod/product_test.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-6 mobile-slideshow_item">
+                        <img src="image/prod/product_test.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6 mobile-slideshow_item">
+                        <img src="image/prod/product_test.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6 mobile-slideshow_item">
+                        <img src="image/prod/product_test.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+
                 <div class="row product-info_rating-row">
                     <div class="category-card_rating-stars">
                         <span class="category-card_rating-star"></span>
@@ -770,14 +792,20 @@
                             4.1
                         </div>
                         <div class="category-card_rating-count">
-                            9 <span class="mobile-hide">отзыва</span>
+                            9 <span>отзыва</span>
                         </div>
                     </div>
-                    <div class="product-model">
+                    <div class="product-model mobile-hide">
                         код : 8888888
                     </div>
                 </div>
                 <div class="row product-info_price-row">
+                    <div class="mobile-service_btns mobile-show">
+                        <div class="pi-service_btn pr-fav_btn">
+                            <span></span></div>
+                        <div class="pi-service_btn pr-comp_btn">
+                            <span></span></div>
+                    </div>
                     <div class="product-info_price">
                         9 999 <span>грн</span>
                     </div>
@@ -787,54 +815,84 @@
                 </div>
                 <div class="row product-info_buttons-row">
                     <button class="big-green_btn btn">В корзину</button>
-                    <button class="big-green_btn-outline btn">В один клик</button>
+                    <button class="big-green_btn-outline btn mobile-hide">В один клик</button>
                     <div class="product-info_quantity">
                         <div class="qty-container">
                             <button class="qty-btn-minus btn-light" type="button"><span></span></button>
                             <input type="text" name="qty" value="0" class="input-qty"/>
                             <button class="qty-btn-plus btn-light" type="button"><span></span></button>
                         </div>
-                        <div class="product-info_quantity_text">Выбрать количество</div>
+                        <div class="product-info_quantity_text mobile-hide">Выбрать количество</div>
                     </div>
                 </div>
-                <div class="row product-info_service-buttons-row">
+                <div class="row product-info_service-buttons-row mobile-hide">
                     <div class="pi-service_btn pr-fav_btn">
                         <span></span> В список желаний</div>
                     <div class="pi-service_btn pr-comp_btn">
                         <span></span> Добавить к сравнению</div>
                 </div>
-                <div class="row product-info_service-text-row">
+                <div class="row product-info_service-text-row mobile-hide">
                     <div>Гарантия: 12 месяцев</div>
                     <div><span></span> Доставка по всем городам</div>
                 </div>
             </div>
+
+            <div class="col-12 product-mobile-hidden_nav">
+                <div class="row">
+                    <div class="col-3 mobile-hiddennav_view">
+                        <div class="mobile-hiddennav_card">
+                            <div class="mobile-hiddennav_icon"></div>
+                            <div class="mobile-hiddennav_title">Описание</div>
+                        </div>
+                    </div>
+                    <div class="col-3 mobile-hiddennav_options">
+                        <div class="mobile-hiddennav_card">
+                            <div class="mobile-hiddennav_icon"></div>
+                            <div class="mobile-hiddennav_title">Характеристики</div>
+                        </div>
+                    </div>
+                    <div class="col-3 mobile-hiddennav_accetories">
+                        <div class="mobile-hiddennav_card">
+                            <div class="mobile-hiddennav_icon"></div>
+                            <div class="mobile-hiddennav_title">Аксессуары</div>
+                        </div>
+                    </div>
+                    <div class="col-3 mobile-hiddennav_reviews">
+                        <div class="mobile-hiddennav_card">
+                            <div class="mobile-hiddennav_icon"></div>
+                            <div class="mobile-hiddennav_title">Отзывы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="row product-char_preview">
             <div class="col-12 product-char_preview-title">Основные характеристики</div>
-            <div class="col-12">
+            <div class="col-12 product-char_preview-col">
                 <div class="row">
-                    <div class="col-lg-4 product-char_preview-col">
+                    <div class="col-12 col-lg-4 product-char_preview-col">
                         <div>Тип устройства:</div>
                         <div>Wi-Fi IP-видеокамера</div>
                     </div>
-                    <div class="col-lg-4 product-char_preview-col">
+                    <div class="col-12 col-lg-4 product-char_preview-col">
                         <div>Поддержка Wi-Fi:</div>
                         <div>есть</div>
                     </div>
-                    <div class="col-lg-4 product-char_preview-col">
+                    <div class="col-12 col-lg-4 product-char_preview-col">
                         <div>Слот для карт памяти:</div>
                         <div>есть</div>
                     </div>
-                    <div class="col-lg-4 product-char_preview-col">
+                    <div class="col-12 col-lg-4 product-char_preview-col">
                         <div>Разрешение матрицы:</div>
                         <div>2 Мп</div>
                     </div>
-                    <div class="col-lg-4 product-char_preview-col">
+                    <div class="col-12 col-lg-4 product-char_preview-col">
                         <div>Угол обзора:</div>
                         <div>102°</div>
                     </div>
-                    <div class="col-lg-4 product-char_preview-col">
+                    <div class="col-12 col-lg-4 product-char_preview-col">
                         <div>Встроенный микрофон:</div>
                         <div>есть</div>
                     </div>
@@ -848,7 +906,7 @@
         <div class="row recomended-row">
             <div class="col-12 recomended-row_title-col">
                 <div class="recomended-row_title">Рекомендуемые аксессуары</div>
-                <button class="big-green_btn-outline btn">Показать больше</button>
+                <button class="big-green_btn-outline btn mobile-hide">Показать больше</button>
             </div>
 
             <div class="col-lg-3">
@@ -935,7 +993,7 @@
 
         </div>
 
-        <div class="row product-sticky_row sticky-top">
+        <div class="row product-sticky_row sticky-top mobile-hide">
             <div class="product-sticky_nav">
                 <button class="big-blue_btn-outline product-sticky_view">ОБЗОР</button>
                 <button class="big-blue_btn-outline product-sticky_options">ХАРАКТЕРИСТИКИ</button>
@@ -1113,8 +1171,11 @@
 
                 </div>
                 <div class="product-reviews_buttons">
-                    <div class="product-reviews_all-btn revtab-link">Смотреть все отзывы к товару</div>
-                    <div><button class="big-blue_btn revtab-link">Написать отзыв</button></div>
+                    <div class="product-reviews_all-btn revtab-link mobile-hide">Смотреть все отзывы к товару</div>
+                    <div><button class="big-blue_btn revtab-link mobile-hide">Написать отзыв</button></div>
+                    <div>
+                        <button class="btn product-reviews_mobile-btn mobile-show">Показать все <span></span></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1135,7 +1196,7 @@
                             <div class="category-card_caption">
                                 Камера видеонаблюдения TP-LinkTapo C200
                             </div>
-                            <div class="category-card_rating">
+                            <div class="category-card_rating mobile-hide">
                                 <div class="category-card_rating-stars">
                                     <span class="category-card_rating-star"></span>
                                     <span class="category-card_rating-star"></span>
@@ -1169,7 +1230,7 @@
                             <div class="category-card_caption">
                                 Камера видеонаблюдения TP-LinkTapo C200
                             </div>
-                            <div class="category-card_rating">
+                            <div class="category-card_rating mobile-hide">
                                 <div class="category-card_rating-stars">
                                     <span class="category-card_rating-star"></span>
                                     <span class="category-card_rating-star"></span>

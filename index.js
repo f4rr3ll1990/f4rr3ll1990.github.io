@@ -177,6 +177,19 @@ $(document).ready(function () {
         }]
     });
 
+    $('.mobile-slideshow').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 9999,
+        arrows: true,
+        // prevArrow: $('.brand-prev'),
+        // nextArrow: $('.brand-next'),
+        dots: true,
+        pauseOnHover: false,
+        centerMode: true,
+    });
+
 
 
     // Category grid/line view
@@ -254,6 +267,24 @@ $(document).ready(function () {
         $('#pills-reviews-tab').tab('show')
         $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
     })
+
+    $('.mobile-hiddennav_view').click(function() {
+        $('#pills-main-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.mobile-hiddennav_options').click(function() {
+        $('#pills-options-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.mobile-hiddennav_accetories').click(function() {
+        $('#pills-accessories-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+    $('.mobile-hiddennav_reviews').click(function() {
+        $('#pills-reviews-tab').tab('show')
+        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+    })
+
     $('.revtab-link').click(function() {
         $('#pills-reviews-tab').tab('show')
         $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})

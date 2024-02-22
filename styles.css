@@ -2479,9 +2479,9 @@ footer {
 
 
 
-.user-history_row {
+/* .user-history_row {
     padding-top: 120px;
-}
+} */
 
 .user-history_title {
     font-family: Roboto;
@@ -2752,7 +2752,7 @@ footer {
     text-align: left;
     color: #207DE9
 }
-.product-info_service-buttons-row .pr-fav_btn span {
+.pr-fav_btn span {
     background-image: url('image/prod/product-fav.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2763,7 +2763,7 @@ footer {
     top: 6px;
     margin-right: 16px;
 }
-.product-info_service-buttons-row .pr-comp_btn span {
+.pr-comp_btn span {
     background-image: url('image/prod/product-compare.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -3727,7 +3727,7 @@ footer {
         padding-left: 4px;
     }
 
-    .category-card_imagewrap {
+    .category-cards_row .category-card_imagewrap {
         max-width: 30%;
     }
 
@@ -3795,6 +3795,280 @@ footer {
         right: 0;
         bottom: 0;
     } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .product-info_wrap {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-info_price {
+        padding-left: 0;
+        margin-right: 18px;
+    }
+    #pills-tabContent {
+        padding-bottom: 0;
+    }
+    .product-tab_col {
+        order: 1;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .pills-main_row {
+        padding-top: 0px;
+    }
+    .product_main-row {
+        padding-bottom: 0px;
+    }
+    
+    .mobile-slideshow .slick-dots {
+        width: auto;
+        margin-left: 24px;
+        bottom: -35px;
+    }
+    .mobile-slideshow .slick-dots li button:before {
+        content: "";
+        background-color: #A9B4BC;
+        width: 18px;
+        height: 4px;
+        border-radius: 1px;
+        opacity: 1 !important;
+        /* color: #A9B4BC !important; */
+    }
+    .mobile-slideshow .slick-dots li.slick-active button:before {
+        background-color: #2780E6;
+        /* color: #2780E6  !important; */
+        opacity: 1 !important;
+    }
+
+    .mobile-slideshow_item {
+        text-align: center;
+    }
+    /* .mobile-slideshow_item img{
+        height: 25vh;
+        width: auto;
+    } */
+    .slick-arrow {
+        z-index: 1000;
+    }
+
+    .product-info_price-row {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-left: 4px;
+    }
+    .product-info_stock {
+        padding-top: 4px;
+    }
+    .product-info_buttons-row {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .product-info_buttons-row .btn {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .product-info_rating-row {
+        order: 1;
+        padding-top: 18px;
+    }
+
+    .mobile-service_btns {
+        position: absolute;
+        display: flex !important;
+        flex-direction: row;
+        margin-top: -50px;
+        right: 0px;
+    }
+    .mobile-service_btns .pr-fav_btn {
+        margin-right: 18px;
+    }
+
+    .product-mobile-hidden_nav {
+        padding: 0;
+        margin-top: 16px;
+    }
+
+    .product-mobile-hidden_nav .col-3 {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .product-mobile-hidden_nav .col-3:first-child {
+        padding-left: 0px;
+    }
+    .product-mobile-hidden_nav .col-3:last-child {
+        padding-right: 0px;
+    }
+
+    .product-mobile-hidden_nav .mobile-hiddennav_card {
+        background-color: #70828F;
+        border-radius: 4px;
+        font-family: Roboto;
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #F7FAFF;
+        padding: 4px 4px;
+    }
+
+    .mobile-hiddennav_view .mobile-hiddennav_icon {
+        background-image: url('image/prod/assignment.svg');
+    }
+    .mobile-hiddennav_options .mobile-hiddennav_icon {
+        background-image: url('image/prod/handyman.svg');
+    }
+    .mobile-hiddennav_accetories .mobile-hiddennav_icon {
+        background-image: url('image/prod/business_center.svg');
+    }
+    .mobile-hiddennav_reviews .mobile-hiddennav_icon {
+        background-image: url('image/prod/chat.svg');
+    }
+    .mobile-hiddennav_icon {
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        top: 0px;
+        left: 0px;
+    }
+
+
+    .product-char_preview-title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .product-char_preview-col div {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .product-char_preview .row {
+        padding-left: 0;
+        width: 100%;
+        padding-top: 0;
+    }
+    .product-char_preview-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .product-char_preview-col div {
+        padding-top: 14px;
+    }
+    .pills-options_btn-col {
+        padding-top: 16px;
+    }
+    .product-char_preview {
+        padding-bottom: 20px;
+    }
+    .pills-options_row {
+        padding-bottom: 80px;
+    }
+    /* .options-tab_item div {
+        overflow: hidden;
+        max-width: 50%;
+        white-space: nowrap;
+    } */
+    .options-tab_item {
+        flex-direction: column;
+    }
+
+
+
+
+
+    .recomended-row {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .recomended-row_title {
+        font-size: 16px;
+        line-height: 17px;
+        padding-top: 0;
+    }
+
+    .product-reviews_row {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .product-reviews_inner {
+        padding: 0;
+    }
+    .product-reviews_title {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-bottom: 0;
+    }
+    .product-reviews_list {
+        padding-top: 0;
+    }
+    .product-reviews_buttons {
+        justify-content: center;
+    }
+    .product-reviews_mobile-btn {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #207DE9;
+    }
+    .product-reviews_mobile-btn span {
+        background-image: url(image/prod/Arrow5.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        top: 12px;
+    }
+
+    .user-history_row {
+        padding-top: 0;
+    }
+    .user-history_title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
