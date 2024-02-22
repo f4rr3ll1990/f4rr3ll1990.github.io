@@ -2810,7 +2810,7 @@ footer {
     padding-bottom: 80px;
 }
 .product-char_preview .row {
-    padding-left: 68px;
+    padding-left: 12vw;
 }
 .product-char_preview-title {
     text-align: center;
@@ -2826,7 +2826,7 @@ footer {
     display: flex;
     flex-direction: row;
 }
-.product-char_preview-col div {
+.product-char_preview-col .row div {
     padding-top: 24px;
     width: 50%;
     font-family: Roboto;
