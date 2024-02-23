@@ -1156,10 +1156,25 @@ ul.static-menu,
 }
 
 /* Request section */
-.request-section {
+/* .request-section {
     padding-top: 120px;
     padding-bottom: 120px;
+} */
+
+
+.request-section_specialist {
+    padding-top: 17vh;
+    padding-left: 50%;
+    background-image: url('image/main/request-pattern.svg');
+    background-repeat: no-repeat;
+    height: 90vh;
 }
+.request-section_info {
+    padding-top: 17vh;
+    max-width: 27vw;
+    /* padding-top: 50px; */
+}
+
 
 .request-section_title {
     color: #4E4E4E;
@@ -1168,12 +1183,13 @@ ul.static-menu,
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
+    margin-top: 50px;
 }
 
 .request-section_buttonwrap {
-    padding-top: 40px;
-    text-align: center;
+    padding-top: 32px;
+    text-align: left;
 }
 
 .request-button_arrow {
@@ -1204,7 +1220,7 @@ ul.static-menu,
 }
 
 .request-section_text {
-    padding-top: 40px;
+    padding-top: 24px;
     color: #4E4E4E;
     font-family: Roboto;
     font-size: 20px;
@@ -1216,6 +1232,152 @@ ul.static-menu,
 
 
 /* Portfolio section */
+
+/* !!!portfolio */
+
+
+/* GALLERY */
+.newGallery_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.newGalleryCard {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 24px;
+}
+/* small card (1) */
+.newGalleryCard:nth-of-type(5n-4) {
+    width: 33.333333%;
+}
+/* big card (2) */
+.newGalleryCard:nth-of-type(5n-3) {
+    width: 66.666667%;
+}
+/* small card (3,4,5) */
+.newGalleryCard:nth-of-type(5n-2),
+.newGalleryCard:nth-of-type(5n-1),
+.newGalleryCard:nth-of-type(5n) {
+    width: 33.333333%;
+}
+
+/* Flip card */
+.newGalleryCard .card-flip>div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.newGalleryCard .card-front img {
+    width: 100%;
+}
+
+.newGalleryCard .card-front {
+    transform: rotateY(0deg);
+}
+
+.newGalleryCard .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.newGalleryCard .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.newGalleryCard .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* Card styles */
+.newGalleryCard .card-front img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: 55vh;
+}
+.newGalleryCard .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    padding: 32px 16px 32px 16px;
+}
+
+.newGalleryCard .portfolio-item_title {
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #000000;
+}
+
+.newGalleryCard .portfolio-item_subtitle {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #696969;
+}
+
+.newGalleryCard .portfolio-item_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+}
+
+.newGalleryCard .portfolio-item_footer .pf-logo {
+    width: 10vw;
+    padding-top: 4px;
+}
+.newGalleryCard .portfolio-item_footer .pf-link a {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #207DE9;
+    border-radius: 8px;
+    padding: 8px 32px 8px 16px;
+}
+.newGalleryCard .portfolio-item_footer .pf-link a .pf-link_icon {
+    background-image: url('image/main/Arrow 4.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/* big card (2) */
+.newGalleryCard:nth-of-type(5n-3) .port-card-big .portfolio-item_title {
+    padding-top: 24px;
+    padding-left: 118px;
+    padding-right: 118px;
+}
+
+
+/* Home portfolio section */
 .portfolio-section {
     padding-top: 60px;
     padding-bottom: 120px;
@@ -1254,12 +1416,75 @@ ul.static-menu,
 .portfolio-section .tab-content {
     padding-top: 60px;
 }
+/* Portfolio page */
+
+.portfolio-main {
+    padding-top: 24px;
+    padding-bottom: 85px;
+}
+.portfolio-main_title {
+    margin-top: 40px;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #A9B4BC;
+    width: 100%;
+}
+.portfolio-main_subtitle {
+    margin-top: 24px;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    padding-left: 16vw;
+    padding-right: 16vw;
+}
+.portfolio-main_subtitle span {
+    color: #2780E6;
+}
+
+.portfolio-main .nav-pills {
+    padding-top: 115px;
+}
+
+.portfolio-main .tab-content {
+    padding-top: 60px;
+}
+.portfolio-main #pills-tabContent {
+    padding-bottom: 40px;
+}
+.portfolio-main .portfolio-all_wrap {
+    padding-top: 0;
+}
+
+.portfolio-main .nav-link {
+    color: #4E4E4E;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+}
+
+.portfolio-main .nav-link.active {
+    background-color: transparent;
+    color: #2780E6;
+    text-decoration: underline;
+}
 
 
 
-
-
-
+/* 
 
 .card-flip>div {
     backface-visibility: hidden;
@@ -1449,8 +1674,9 @@ ul.static-menu,
     position: relative;
     top: 10px;
     left: 10px;
-}
+} */
 
+/* !!! */
 
 /* 
 .p-small {
@@ -3538,8 +3764,18 @@ footer {
         padding-top: 32px;
     }
 
+
+
+    .request-section_specialist {
+        display: none;
+    }
+    .request-section_info {
+        padding-top: 0;
+        max-width: 100%;
+    }
+
     .request-section {
-        padding-top: 60px;
+        padding-top: 0px;
         padding-bottom: 60px;
     }
 
@@ -3550,6 +3786,7 @@ footer {
         line-height: 22px;
         letter-spacing: 0em;
         text-align: center;
+        margin-top: 0;
     }
 
     .request-button_arrow {
@@ -3616,7 +3853,64 @@ footer {
         margin-bottom: 12px;
     } */
 
-    .port-mob-l {
+    /* !!!portfolio */
+
+    .newGalleryCard:nth-of-type(5n-4),
+    .newGalleryCard:nth-of-type(5n-3),
+    .newGalleryCard:nth-of-type(5n-2),
+    .newGalleryCard:nth-of-type(5n-1),
+    .newGalleryCard:nth-of-type(5n) {
+        width: 100%;
+    }
+    .newGalleryCard .card-front img {
+        /* height: 55vh; */
+        height: 30vh;
+    }
+    .newGalleryCard .card-body {
+        padding: 16px 24px;
+    }
+    .newGalleryCard .portfolio-item_title {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+        padding-left: 24px;
+    }
+    .newGalleryCard .portfolio-item_subtitle {
+        padding-top: 8px;
+        font-size: 12px;
+        line-height: 13px;
+        max-height: 32vh;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .newGalleryCard .portfolio-item_footer .pf-logo {
+        width: 25vw;
+        padding-top: 6px;
+    }
+    .newGalleryCard .portfolio-item_footer .pf-link a .pf-link_text {
+        display: none;
+    }
+
+    .portfolio-main_title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .portfolio-main_subtitle {
+        font-size: 24px;
+        line-height: 26px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .portfolio-main .nav-link {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+    .portfolio-main .tab-content {
+        padding-top: 16px;
+    }
+
+    /* .port-mob-l {
         padding-right: 6px;
         padding-left: 0;
     }
@@ -3641,6 +3935,7 @@ footer {
     .port-bb_l {
         padding: 0 0 0 6px;
     }
+    
 
     .port-card-small {
         padding: 4px 4px 4px 4px;
@@ -3659,7 +3954,8 @@ footer {
 
     .portfolio-item_footer {
         display: none;
-    }
+    } */
+        /* !!! */
 
     /* .port-card-small .portfolio-item_footer img {
         display: none;
