@@ -413,7 +413,47 @@
         </nav>
     </header>
 
-    <section class="container-fluid portfolio-main">
+    <style>
+        .crumbs-list {
+            position: relative;
+            padding: 1em;
+            width: 100%;
+            white-space: nowrap;
+            overflow-x: scroll;
+            /* has to be scroll, not auto */
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .crumbs-list li {
+            display: inline-block;
+        }
+    </style>
+
+    <section class="product_main container-fluid">
+
+        <div class="row">
+            <div class="col-lg-9 offset-lg-3 col-p12">
+                <ul class="crumbs-list">
+                    <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="#" itemprop="url">
+                            <span itemprop="title">Главная</span>
+                        </a>
+                    </li>
+                    <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="#" itemprop="url">
+                            <span itemprop="title">Камеры видеонаблюдения</span>
+                        </a>
+                    </li>
+                    <li>2 Мп Wi-Fi IP-видеокамера Imou Bullet</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
         <div class="row breadcrumbs-wrap">
             <div class="col-lg-9 offset-lg-3 col-p12">
                 <ul class="breadcrumb">
@@ -422,340 +462,23 @@
                             <span itemprop="title">Главная</span>
                         </a>
                     </li>
-                    <li>Портфолио</li>
+                    <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="#" itemprop="url">
+                            <span itemprop="title">Камеры видеонаблюдения</span>
+                        </a>
+                    </li>
+                    <li>2 Мп Wi-Fi IP-видеокамера Imou Bullet</li>
                 </ul>
             </div>
         </div>
 
-        <div class="row">
-            <div class="portfolio-main_title">
-                наше портфолио
-            </div>
-            <div class="portfolio-main_subtitle">
-                Здесь представлены наши выполненные проекты 
-                по установке <span>систем безопасности</span>.
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-video-tab" data-toggle="pill"
-                            data-target="#pills-video" type="button" role="tab" aria-controls="pills-video"
-                            aria-selected="true">Видеонаблюдение</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-skud-tab" data-toggle="pill" data-target="#pills-skud"
-                            type="button" role="tab" aria-controls="pills-skud" aria-selected="false">Контроль
-                            доступа</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-domo-tab" data-toggle="pill" data-target="#pills-domo"
-                            type="button" role="tab" aria-controls="pills-domo" aria-selected="false">Домофоны</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-network-tab" data-toggle="pill" data-target="#pills-network"
-                            type="button" role="tab" aria-controls="pills-network" aria-selected="false">Сети</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-12 p-0">
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-video" role="tabpanel"
-                        aria-labelledby="pills-video-tab">
-
-                        <div class="row newGallery_row">
-
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest2.png" alt="" class="img-fluid">
-                                        <div class="frt">dfgdfgdfgdfgbsdfhgdfhdgfhdfgdsfbh</div>
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest2.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в Офисе</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности для
-                                                    многих объектов, включая жилые
-                                                    здания, офисы, торговые центры и прочие публичные места. Оно
-                                                    позволяет не только вести непрерывное
-                                                    наблюдение за происходящим, но и оперативно реагировать на возможные
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest3.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности для
-                                                    многих объектов, включая жилые
-                                                    здания, офисы, торговые центры и прочие публичные места. Оно
-                                                    позволяет не только вести непрерывное
-                                                    наблюдение за происходящим, но и оперативно реагировать на возможные
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest4.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest5.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest1.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest2.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в Офисе</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности для
-                                                    многих объектов, включая жилые
-                                                    здания, офисы, торговые центры и прочие публичные места. Оно
-                                                    позволяет не только вести непрерывное
-                                                    наблюдение за происходящим, но и оперативно реагировать на возможные
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest3.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности для
-                                                    многих объектов, включая жилые
-                                                    здания, офисы, торговые центры и прочие публичные места. Оно
-                                                    позволяет не только вести непрерывное
-                                                    наблюдение за происходящим, но и оперативно реагировать на возможные
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest4.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newGalleryCard">
-                                <div class="card card-flip ">
-                                    <div class="card-front">
-                                        <img src="image/gallery/GalleryTest5.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="card-back">
-                                        <div class="port-card-small card-body">
-                                            <div>
-                                                <div class="portfolio-item_title">Установка в доме</div>
-                                                <div class="portfolio-item_subtitle">
-                                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-item_footer">
-                                                <div class="pf-logo">
-                                                    <img src="image/main/hik.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="pf-link">
-                                                    <a href="#"><span class="pf-link_text">Показать еще</span> <span class="pf-link_icon"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-skud" role="tabpanel" aria-labelledby="pills-skud-tab">
-                        ...
-                    </div>
-                    <div class="tab-pane fade" id="pills-domo" role="tabpanel" aria-labelledby="pills-domo-tab">
-                        ...
-                    </div>
-                    <div class="tab-pane fade" id="pills-network" role="tabpanel" aria-labelledby="pills-network-tab">
-                        ...
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="portfolio-all_wrap">
-                <button class="portfolio-all_button">Посмотреть еще 88</button>
-            </div>
-        </div>
+        <div class="row spacer"></div>
 
     </section>
+
+
+
+
 
     <section class="mobile-footer">
         <div class="row footer-mobile_form">
