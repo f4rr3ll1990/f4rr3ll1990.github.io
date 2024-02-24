@@ -1,6 +1,24 @@
 function isHovered(selector) {
     return $(selector + ":hover").length > 0
 }
+
+if (localStorage.getItem("category_grid") === null) {
+    console.log("LocalStorage init")
+    localStorage.setItem("category_grid", "grid")
+}
+if (localStorage.getItem("category_grid") == "grid") {
+    $(".cat-product-col").removeClass('col-line')
+    $(".cat-product-col").removeClass('col-lg-12')
+    $(".cat-product-col").addClass('col-lg-3')
+    $(".cat-product-col").addClass('col-grid')
+}
+if (localStorage.getItem("category_grid") == "line") {
+    $(".cat-product-col").removeClass('col-lg-3')
+    $(".cat-product-col").removeClass('col-grid')
+    $(".cat-product-col").addClass('col-lg-12')
+    $(".cat-product-col").addClass('col-line')
+}
+
 $(document).ready(function () {
 
     // MOBILE NAV
@@ -219,6 +237,9 @@ $(document).ready(function () {
         centerMode: true,
     });
 
+    // Scrollable Breadcrumbs
+    var $scrollableBreadcrumbs = $(".scrollableBreadcrumbs")
+    $scrollableBreadcrumbs.scrollLeft($scrollableBreadcrumbs[0].scrollWidth)
 
 
     // Category grid/line view
@@ -227,6 +248,7 @@ $(document).ready(function () {
         $(".cat-product-col").removeClass('col-grid')
         $(".cat-product-col").addClass('col-lg-12')
         $(".cat-product-col").addClass('col-line')
+        localStorage.setItem("category_grid", "line")
     })
 
     $("#cat-grid").click(function () {
@@ -234,6 +256,7 @@ $(document).ready(function () {
         $(".cat-product-col").removeClass('col-lg-12')
         $(".cat-product-col").addClass('col-lg-3')
         $(".cat-product-col").addClass('col-grid')
+        localStorage.setItem("category_grid", "grid")
     })
 
 
@@ -326,18 +349,6 @@ $(document).ready(function () {
     $('#pills-main-tab').on('hidden.bs.tab', function (event) {
         $('.product-char_preview').hide()
     })
-
-
-
-
-
-
-    // TEST!!!
-    var $scrollableBreadcrumbs = $(".scrollableBreadcrumbs")
-    $scrollableBreadcrumbs.scrollLeft($scrollableBreadcrumbs[0].scrollWidth)
-
-
-
 
 
 
