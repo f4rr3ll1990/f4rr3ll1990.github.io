@@ -2156,6 +2156,10 @@ footer {
     padding: 0px;
 }
 
+.scrollableBreadcrumbs_wrap {
+    -webkit-mask: linear-gradient(to right, rgba(0, 0, 0, 0), black 20%, black);
+
+}
 .scrollableBreadcrumbs {
     position: relative;
     width: 100%;
