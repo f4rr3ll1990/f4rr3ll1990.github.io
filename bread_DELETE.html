@@ -422,11 +422,22 @@
             -webkit-overflow-scrolling: touch;
         }
         .scrollableBreadcrumbs::-webkit-scrollbar {
-            /* height: 5px; */
             display: none;
         }
         .scrollableBreadcrumbs li {
             display: inline-block;
+            padding-right: 15px;
+        }
+        .scrollableBreadcrumbs a .bread-icon {
+            background-image: url('image/main/bread_spacer.svg');
+            background-repeat: no-repeat;
+            height: 8px;
+            width: 8px;
+            background-size: contain;
+            display: inline-block;
+            position: relative;
+            top: 0px;
+            left: 9px;
         }
     </style>
 
@@ -438,18 +449,20 @@
                     <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                         <a href="#" itemprop="url">
                             <span itemprop="title">Главная</span>
+                            <i class="bread-icon"></i>
                         </a>
                     </li>
                     <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                         <a href="#" itemprop="url">
                             <span itemprop="title">Камеры видеонаблюдения</span>
+                            <i class="bread-icon"></i>
                         </a>
                     </li>
                     <li>2 Мп Wi-Fi IP-видеокамера Imou Bullet</li>
                 </ul>
             </div>
         </div>
-
+        <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio quis commodi, illo quisquam repudiandae voluptatem officiis vitae consequatur, omnis inventore aliquid soluta! Cupiditate aperiam saepe consectetur ducimus minus modi.</marquee>
         <br>
         <br>
         <br>
