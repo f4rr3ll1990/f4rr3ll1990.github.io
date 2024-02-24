@@ -327,4 +327,19 @@ $(document).ready(function () {
         $('.product-char_preview').hide()
     })
 
+
+
+
+
+
+    // TEST!!!
+    var $scrollableBreadcrumbs = $(".scrollableBreadcrumbs")
+    $scrollableBreadcrumbs.scrollLeft($scrollableBreadcrumbs[0].scrollWidth)
+
+
+
+
+
+
+
 }); // $(document).ready

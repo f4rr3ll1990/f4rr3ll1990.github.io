@@ -414,17 +414,18 @@
     </header>
 
     <style>
-        .crumbs-list {
+        .scrollableBreadcrumbs {
             position: relative;
-            padding: 1em;
             width: 100%;
             white-space: nowrap;
             overflow-x: scroll;
-            /* has to be scroll, not auto */
             -webkit-overflow-scrolling: touch;
         }
-
-        .crumbs-list li {
+        .scrollableBreadcrumbs::-webkit-scrollbar {
+            /* height: 5px; */
+            display: none;
+        }
+        .scrollableBreadcrumbs li {
             display: inline-block;
         }
     </style>
@@ -432,8 +433,8 @@
     <section class="product_main container-fluid">
 
         <div class="row">
-            <div class="col-lg-9 offset-lg-3 col-p12">
-                <ul class="crumbs-list">
+            <div class="col-12 col-lg-9 offset-lg-3 col-p12">
+                <ul class="scrollableBreadcrumbs">
                     <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                         <a href="#" itemprop="url">
                             <span itemprop="title">Главная</span>
