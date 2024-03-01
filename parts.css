@@ -1,10 +1,11 @@
 .big-green_btn {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
+    
     padding: 16px 40px;
     border-radius: 8px;
     gap: 8px;
@@ -13,12 +14,13 @@
     color: #FFFFFF;
 }
 .big-green_btn-outline {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
+    
     padding: 16px 40px;
     border-radius: 8px;
     gap: 8px;
@@ -27,12 +29,13 @@
     border: 1px solid #38B92C;
 }
 .big-blue_btn {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
+
     padding: 16px 40px;
     border-radius: 8px;
     gap: 8px;
@@ -41,16 +44,60 @@
     color: #FFFFFF;
 }
 .big-blue_btn-outline {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
+    
     padding: 16px 40px;
     border-radius: 8px;
     gap: 8px;
     background-color: transparent;
     color: #2780E6;
     border: 1px solid #2780E6;
+}
+
+
+.desktopH1 {
+    font-family: Lato;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.desktopH2 {
+font-family: Lato;
+font-size: 40px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: -0.005em;
+text-align: left;
+}
+.desktopH3 {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.desktopH4 {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.desktopH6 {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
 }

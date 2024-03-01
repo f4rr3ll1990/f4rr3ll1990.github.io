@@ -85,41 +85,45 @@ $(document).ready(function () {
     })
 
     // Sticky navbar
-    var $navbar = $("#navbar"),
-        y_pos = $navbar.offset().top,
-        height = $navbar.height();
+    var $navbar = $("#navbar")
+    if($navbar.length) {
+        var y_pos = $navbar.offset().top
+        var height = $navbar.height()
+    
+        $(document).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+    
+            if (scrollTop > y_pos + height) {
+                $navbar.addClass("navbar-fixed").animate({
+                    top: 0
+                });
+            } else if (scrollTop <= y_pos) {
+                $navbar.removeClass("navbar-fixed").clearQueue().animate({
+                    top: "-48px"
+                }, 0);
+            }
+        })
+    }
 
-    $(document).scroll(function () {
-        var scrollTop = $(this).scrollTop();
-
-        if (scrollTop > y_pos + height) {
-            $navbar.addClass("navbar-fixed").animate({
-                top: 0
-            });
-        } else if (scrollTop <= y_pos) {
-            $navbar.removeClass("navbar-fixed").clearQueue().animate({
-                top: "-48px"
-            }, 0);
-        }
-    });
-
-    var $mobnavbar = $("#mob-nav"),
-        y_pos = $mobnavbar.offset().top,
-        height = $mobnavbar.height();
-
-    $(document).scroll(function () {
-        var scrollTop = $(this).scrollTop();
-
-        if (scrollTop > y_pos + height) {
-            $mobnavbar.addClass("navbar-fixed").animate({
-                top: 0
-            });
-        } else if (scrollTop <= y_pos) {
-            $mobnavbar.removeClass("navbar-fixed").clearQueue().animate({
-                top: "-48px"
-            }, 0);
-        }
-    });
+    var $mobnavbar = $("#mob-nav")
+    if($mobnavbar.length) {
+        var y_pos = $mobnavbar.offset().top
+        var height = $mobnavbar.height()
+    
+        $(document).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+    
+            if (scrollTop > y_pos + height) {
+                $mobnavbar.addClass("navbar-fixed").animate({
+                    top: 0
+                });
+            } else if (scrollTop <= y_pos) {
+                $mobnavbar.removeClass("navbar-fixed").clearQueue().animate({
+                    top: "-48px"
+                }, 0);
+            }
+        })
+    }
 
 
     // HOME HERO
@@ -294,52 +298,52 @@ $(document).ready(function () {
 
 
     // Product tab buttons
-    $('.pills-options_btn-col .btn').click(function() {
+    $('.pills-options_btn-col .btn').click(function () {
         $('#pills-options-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
-    $('.recomended-row_title-col .btn').click(function() {
+    $('.recomended-row_title-col .btn').click(function () {
         $('#pills-accessories-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
 
-    $('.product-sticky_view').click(function() {
+    $('.product-sticky_view').click(function () {
         $('#pills-main-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
-    $('.product-sticky_options').click(function() {
+    $('.product-sticky_options').click(function () {
         $('#pills-options-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
-    $('.product-sticky_accetories').click(function() {
+    $('.product-sticky_accetories').click(function () {
         $('#pills-accessories-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
-    $('.product-sticky_reviews').click(function() {
+    $('.product-sticky_reviews').click(function () {
         $('#pills-reviews-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
 
-    $('.mobile-hiddennav_view').click(function() {
+    $('.mobile-hiddennav_view').click(function () {
         $('#pills-main-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
-    $('.mobile-hiddennav_options').click(function() {
+    $('.mobile-hiddennav_options').click(function () {
         $('#pills-options-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
-    $('.mobile-hiddennav_accetories').click(function() {
+    $('.mobile-hiddennav_accetories').click(function () {
         $('#pills-accessories-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
-    $('.mobile-hiddennav_reviews').click(function() {
+    $('.mobile-hiddennav_reviews').click(function () {
         $('#pills-reviews-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
 
-    $('.revtab-link').click(function() {
+    $('.revtab-link').click(function () {
         $('#pills-reviews-tab').tab('show')
-        $("#product-tab").get(0).scrollIntoView({behavior: 'smooth'})
+        $("#product-tab").get(0).scrollIntoView({ behavior: 'smooth' })
     })
 
     // 
@@ -350,7 +354,20 @@ $(document).ready(function () {
         $('.product-char_preview').hide()
     })
 
+    var stickymobile = $('.stickymobile')
+    if(stickymobile.length) {
+        var stickyTop = stickymobile.offset().top
+        $(window).scroll(function () {
+            var windowTop = $(window).scrollTop()
+            if (stickyTop < windowTop) {
+                // $('.stickymobile').css('position', 'fixed')
+                $('.stickymobile').addClass("product-sticky-mobile-nav")
+            } else {
+                // $('.stickymobile').css('position', 'relative')
+                $('.stickymobile').removeClass("product-sticky-mobile-nav")
+            }
+        })
+    }
 
+}) // $(document).ready
 
-
-}); // $(document).ready

@@ -149,7 +149,7 @@
 }
 
 .hidden-menu_trigger {
-    height: 8vh;
+    height: 6vh;
     padding-bottom: 0;
 }
 
@@ -198,13 +198,12 @@
 
 
 
-
 .w-top_nav {
-    height: 6.2vh;
+    height: 4.2vh;
 }
 
 .w-bottom_nav {
-    padding-top: 18px;
+    padding-top: 1.4vh;
     background-color: #fff;
 }
 
@@ -223,11 +222,11 @@
 }
 
 .topmenu-wrap a {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #222222;
 }
@@ -237,46 +236,66 @@
 }
 
 .topbuttons-wrap .nav-link {
-    font-family: Roboto;
-    font-size: 14px;
+    font-family: Lato;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 2px;
-    letter-spacing: 0em;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #083A74;
     display: flex;
     align-items: center;
     padding: 9px 10px;
 }
-
+/* .topbuttons-wrap .nav-link .phone-icon {
+    background-image: url("image/main/phone_iphone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+} */
+.topbuttons-wrap .nav-link svg {
+    position: relative;
+    top: -1px;
+}
 .topbuttons-wrap .nav-link span {
     padding-left: 8px;
 }
 
 .mainmenu-wrap a {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #222222;
+    padding-top: 12px;
 }
 
 .menubuttons-icon {
     width: 24px;
     height: 24px;
+    color: #083a74;
+    margin-top: 3px;
 }
 
 .top-cart_button span {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #083A74;
     padding-left: 8px;
+    position: relative;
+    top: -3px;
+    left: 5px;
 }
 
 
@@ -306,7 +325,7 @@
     padding-bottom: 0px;
 }
 
-.mobile-cartbtn_icon {
+/* .mobile-cartbtn_icon {
     background-image: url('image/main/shopping_cart.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -317,6 +336,12 @@
     width: 24px;
     height: 24px;
     padding-left: 0px !important;
+} */
+.mobile-cartbtn_icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: #00448F;
 }
 
 .mobile-cartbtn_total {
@@ -325,7 +350,7 @@
     top: -3px;
 }
 
-.mobile-search_icon {
+/* .mobile-search_icon {
     background-image: url('image/main/search.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -335,8 +360,15 @@
     width: 24px;
     height: 24px;
     padding-left: 0px !important;
+} */
+.mobile-search_icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: #00448F;
+    /* top: 4px;
+    left: 12px; */
 }
-
 
 
 .mobile-buttons_right {
@@ -399,10 +431,10 @@ ul.static-menu,
 .static-menu .static-link {
     cursor: pointer;
     display: block;
-    font-family: IBM Plex Sans;
-    font-size: 20px;
+    font-family: Lato;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 30px;
     letter-spacing: 0em;
     color: #222222;
     border: none;
@@ -424,7 +456,7 @@ ul.static-menu,
 }
 
 .static-menu .sub-menu a {
-    font-family: IBM Plex Sans;
+    font-family: Lato;
     display: block;
     text-decoration: none;
     color: #222222;
@@ -443,7 +475,7 @@ ul.static-menu,
     justify-content: space-around;
 }
 
-.mob-fav span {
+/* .mob-fav span {
     display: block;
     background-image: url('image/main/favorite.svg');
     background-size: contain;
@@ -451,9 +483,16 @@ ul.static-menu,
     background-position-x: center;
     width: 66px;
     height: 40px;
+} */
+.mob-fav svg {
+    color: #00448F;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    top: 5px;
 }
 
-.mob-compare span {
+/* .mob-compare span {
     display: block;
     background-image: url('image/main/balance.svg');
     background-size: contain;
@@ -461,29 +500,40 @@ ul.static-menu,
     background-position-x: center;
     width: 66px;
     height: 40px;
+} */
+.mob-compare svg {
+    color: #00448F;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    top: 5px;
 }
 
 .mob-login {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 23px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    color: #083A74;
-    padding: 8px 24px;
-    border: 1px solid #083A74
+    background-color: #083A74;
+    padding: 4px 24px 14px 36px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
 }
 
 .mob-login span {
-    display: inline-block;
-    background-image: url('image/main/person.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    width: 13px;
-    height: 13px;
-    margin-right: 8px;
+    position: relative;
+    top: 0px;
+}
+.mob-login svg {
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top: 8px;
+    right: 16px;
 }
 
 .mob-navwrap_bottomhead {
@@ -522,6 +572,7 @@ ul.static-menu,
     width: 24px;
     height: 20px;
     position: relative;
+    top: -2px;
     margin: 0px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -617,6 +668,11 @@ ul.static-menu,
     white-space: nowrap;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
 }
 .scrollableBreadcrumbs::-webkit-scrollbar {
     display: none;
@@ -652,24 +708,25 @@ ul.static-menu,
     width: 50vw;
     padding-left: 72px;
     bottom: 40px;
-    font-family: IBM Plex Sans;
-    font-size: 72px;
+    font-family: Lato;
+    font-size: 64px;
     font-weight: 700;
-    line-height: 79px;
-    letter-spacing: 0em;
+    line-height: 60px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #FFFFFF;
 }
 
 .hero-right {
-    height: 84.1vh;
+    height: 88.4vh;
     width: 27.78vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero-image_block {
-    height: 84.1vh;
+    /* height: 84.1vh; */
+    height: 88.4vh;
     width: 72.22vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -686,11 +743,6 @@ ul.static-menu,
 }
 
 .hero-right .text-block_header {
-    font-family: IBM Plex Sans;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 44px;
-    letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
 }
@@ -745,12 +797,6 @@ ul.static-menu,
 }
 
 .main-categories_header {
-    font-family: IBM Plex Sans;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 62px;
-    letter-spacing: 0em;
-    text-align: left;
     padding-left: 15px;
 }
 
@@ -765,12 +811,6 @@ ul.static-menu,
 
 .newcat-header {
     margin: 24px;
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #222222;
     min-height: 60px;
 }
@@ -931,21 +971,11 @@ ul.static-menu,
 }
 
 .advantages-title {
-    font-family: IBM Plex Sans;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 70px;
-    letter-spacing: 0em;
     text-align: center;
     width: 100%;
 }
 
 .advantages-subtitle {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.05em;
     text-align: center;
     width: 100%;
     margin-top: 40px;
@@ -964,11 +994,6 @@ ul.static-menu,
 }
 
 .advantages-subtitle span {
-    font-family: IBM Plex Sans;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0em;
     text-align: center;
 }
 
@@ -987,6 +1012,7 @@ ul.static-menu,
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 45vh;
 }
 
 .advantages-content {
@@ -1005,14 +1031,18 @@ ul.static-menu,
 
 .advantages-card_list {
     max-width: 26vw;
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #4E4E4E;
     margin: 24px 16px;
+}
+.advantages-card_list ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .advantages-card_footer {
@@ -1025,22 +1055,31 @@ ul.static-menu,
 }
 
 .advantages-card_footer .invisible_button {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #222222;
     margin-right: 48px;
 }
 
-.advantages-card_footer .invisible_button:after {
+/* .advantages-card_footer .invisible_button:after {
     content: url('image/main/Arrow-right.svg');
     position: relative;
     top: 3px;
     left: 15px;
+} */
+.advantages-card_footer .invisible_button svg {
+    width: 18px;
+    height: 20px;
+    color: #a9b4bc;
+    position: relative;
+    top: 3px;
+    left: 16px;
 }
+
 /*  */
 
 
@@ -1052,11 +1091,6 @@ ul.static-menu,
 }
 
 .links-section_title {
-    font-family: IBM Plex Sans;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 62px;
-    letter-spacing: 0em;
     text-align: center;
     color: #222222;
     padding: 0px 16vw;
@@ -1068,12 +1102,15 @@ ul.static-menu,
 
 .links-section_ul a {
     color: #222222;
-    font-family: IBM Plex Sans;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 35px;
-    letter-spacing: 0em;
+}
+.links-section_ul a.active {
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.005em;
     text-align: left;
+    color: #083A74;
 }
 
 .links-section_ul li {
@@ -1083,10 +1120,10 @@ ul.static-menu,
 .links-section_text {
     padding-top: 128px;
     color: #696969;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     padding-top: 60px;
@@ -1094,39 +1131,42 @@ ul.static-menu,
 
 .links-section_image {
     padding-top: 60px;
+    order: 1;
 }
 
 .links-section_bottom {
     background-image: url('image/main/links-section_bottom.png');
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: -15px;
+    background-color: #F7FAFF;
 }
 /*  */
 
 /* Request section */
+.request-section {
+    background-color: #083a74;
+}
 .request-section_specialist {
-    padding-top: 17vh;
+    padding-top: 16px;
+    padding-right: 16px;
+    text-align: right;
+    /* padding-top: 17vh;
     padding-left: 50%;
     background-image: url('image/main/request-pattern.svg');
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 90vh; */
 }
 .request-section_info {
-    padding-top: 17vh;
+    /* padding-top: 17vh; */
+    padding-top: 16px;
     max-width: 27vw;
 }
 
 .request-section_title {
-    color: #4E4E4E;
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
+    color: #fff;
     margin-top: 50px;
 }
 
@@ -1138,18 +1178,18 @@ ul.static-menu,
 .request-button_arrow {
     padding: 12px 100px 16px 100px;
     color: #fff;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     background-color: #38b92c;
     border: none;
     border-radius: 8px;
 }
 
-.request-button_arrow span {
+/* .request-button_arrow span {
     background-image: url('image/main/Arrow 4.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -1160,17 +1200,19 @@ ul.static-menu,
     position: relative;
     top: 10px;
     left: 10px;
+} */
+.request-button_arrow svg {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: #FFF;
+    top: 4px;
+    left: 8px;
 }
 
 .request-section_text {
     padding-top: 24px;
-    color: #4E4E4E;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
+    color: #fff;
 }
 /*  */
 
@@ -1260,19 +1302,14 @@ ul.static-menu,
 }
 
 .newGalleryCard .portfolio-item_title {
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
     color: #000000;
 }
 
 .newGalleryCard .portfolio-item_subtitle {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #696969;
@@ -1302,7 +1339,15 @@ ul.static-menu,
     border-radius: 8px;
     padding: 8px 32px 8px 16px;
 }
-.newGalleryCard .portfolio-item_footer .pf-link a .pf-link_icon {
+.newGalleryCard .portfolio-item_footer .pf-link a svg {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: #FFF;
+    top: 3px;
+    left: 6px;
+}
+/* .newGalleryCard .portfolio-item_footer .pf-link a .pf-link_icon {
     background-image: url('image/main/Arrow 4.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -1313,7 +1358,7 @@ ul.static-menu,
     position: relative;
     top: 10px;
     left: 10px;
-}
+} */
 
 /* big card (2) */
 .newGalleryCard:nth-of-type(5n-3) .port-card-big .portfolio-item_title {
@@ -1331,11 +1376,6 @@ ul.static-menu,
 
 .portfolio-section_title {
     color: #000000;
-    font-family: IBM Plex Sans;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 62px;
-    letter-spacing: 0em;
     text-align: center;
     width: 100%;
 }
@@ -1343,10 +1383,10 @@ ul.static-menu,
 .portfolio-section .nav-link {
     padding-top: 80px;
     color: #4E4E4E;
-    font-family: IBM Plex Sans;
+    font-family: Lato;
     font-size: 24px;
     font-weight: 700;
-    line-height: 29px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
     background-color: transparent;
@@ -1412,10 +1452,10 @@ ul.static-menu,
 
 .portfolio-main .nav-link {
     color: #4E4E4E;
-    font-family: IBM Plex Sans;
+    font-family: Lato;
     font-size: 24px;
     font-weight: 700;
-    line-height: 29px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
     background-color: transparent;
@@ -1436,16 +1476,24 @@ ul.static-menu,
 
 .portfolio-all_button {
     background-color: #207de9;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 17px 28px 17px 24px;
+}
+.portfolio-all_button svg {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: #FFF;
+    top: 4px;
+    left: 12px;
 }
 /*  */
 
@@ -1459,11 +1507,6 @@ ul.static-menu,
 
 .articles-section_header {
     width: 100%;
-    font-family: IBM Plex Sans;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 62px;
-    letter-spacing: 0em;
     text-align: center;
     color: #fff;
 }
@@ -1483,12 +1526,6 @@ ul.static-menu,
 
 .articles-section_cardtext {
     padding: 16px 27px;
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #000000;
 }
 
@@ -1511,23 +1548,13 @@ ul.static-menu,
 }
 
 .text-section_title {
-    font-family: IBM Plex Sans;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 62px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #222222;
+    color: #38B92C;
     width: 100%;
+    text-align: center;
 }
 
 .text-section_subtitle {
     padding-top: 34px;
-    font-family: IBM Plex Sans;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 0em;
     text-align: center;
     color: #222222;
     width: 100%;
@@ -1576,10 +1603,10 @@ footer {
 }
 
 .footer-text {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
@@ -1597,11 +1624,11 @@ footer {
 
 .email-form_left {
     width: 45%;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #222222;
     padding: 16px;
@@ -1616,11 +1643,11 @@ footer {
 
 #footer-email-button {
     background-color: #38B92C;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
 }
 
@@ -1637,12 +1664,6 @@ footer {
 }
 
 .footer-logo_text {
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #fff;
     padding: 32px 78px 0 0;
 }
@@ -1652,7 +1673,7 @@ footer {
 }
 
 .footer-call_button {
-    padding: 12px 24px 16px 24px;
+    padding: 12px 24px 16px 28px;
     border-radius: 8px;
     border: none;
     background-color: #fff;
@@ -1665,7 +1686,7 @@ footer {
     text-align: left;
 }
 
-.footer-call_button span {
+/* .footer-call_button span {
     background-image: url('image/main/footer-phone.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -1676,15 +1697,17 @@ footer {
     position: relative;
     top: 5px;
     right: 10px;
+} */
+.footer-call_button svg {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: #00448F;
+    top: 3px;
+    right: 6px;
 }
 
 .footer-center_title {
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #fff;
 }
 
@@ -1694,11 +1717,6 @@ footer {
 
 .footer-center_nav .nav-link {
     padding: 0 0 24px 0;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
     text-align: left;
     color: #fff;
 }
@@ -1709,37 +1727,32 @@ footer {
 }
 
 .footer-bottom_left {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #E7E7E7;
 }
 
-.footer-social_button {
+.footer-social_button svg {
     display: inline-block;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-size: contain;
+    background-size: contain; */
     width: 40px;
     height: 40px;
+    color: #fff;
 }
 
-.telegram-social_icon {
+/* .telegram-social_icon {
     background-image: url('image/main/telegram.svg');
-}
+} */
 
 .facebook-social_icon {
     margin-left: 64px;
     margin-right: 64px;
-    background-image: url('image/main/facebook.svg');
+    /* background-image: url('image/main/facebook.svg'); */
 }
 
-.instagram-social_icon {
+/* .instagram-social_icon {
     background-image: url('image/main/instagram.svg');
-}
+} */
 
 .mobile-footer {
     display: none;
@@ -1753,26 +1766,20 @@ footer {
 }
 
 .category_title {
-    font-family: Roboto;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #222222;
     padding-left: 6px;
 }
 
 .category_product-count {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #717177;
     padding-left: 16px;
-    padding-top: 16px;
+    padding-top: 10px;
 }
 
 .category-header {
@@ -1784,10 +1791,10 @@ footer {
 }
 
 .category-sort select {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
@@ -1796,6 +1803,7 @@ footer {
     border-radius: 8px;
     border-right: 12px solid transparent;
     margin-right: 20px;
+    box-shadow: 0px 0px 4px 0px #00000040;
 }
 
 .category-sort select:focus-visible {
@@ -1803,10 +1811,10 @@ footer {
 }
 
 .category-sort button {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #207DE9;
@@ -1816,7 +1824,7 @@ footer {
     background-color: #fff;
 }
 
-.category-sort button span {
+/* .category-sort button span {
     background-image: url('image/cat/scales-icon.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -1825,6 +1833,12 @@ footer {
     width: 20px;
     height: 20px;
     top: 5px;
+} */
+.category-sort button svg {
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
 }
 
 .cat-row_btn {
@@ -1962,11 +1976,11 @@ footer {
 }
 
 .category-card_caption {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #222222;
     padding: 16px 14px;
@@ -2000,25 +2014,39 @@ footer {
 }
 
 .category-card_rating-value {
-    font-family: Roboto;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    /* font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left; */
     color: #222222;
     padding-left: 8px;
 }
 
 .category-card_rating-count {
-    font-family: Roboto;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    /* font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left; */
     color: #207DE9;
-    padding-top: 1px;
+    padding-top: 3px;
 }
 
 .category-card_optons {
@@ -2033,13 +2061,19 @@ footer {
 }
 
 .category-card_price-val {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
+    font-weight: 600;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
     color: #222222;
+    padding-top: 4px;
+}
+.category-card_price-val span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .category-card_buy button {
@@ -2050,13 +2084,15 @@ footer {
 }
 
 .category-card_buy button .category-card_buy-icon {
-    background-image: url('image/cat/shopping-cart.svg');
+    /* background-image: url('image/cat/shopping-cart.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    display: inline-block;
+    display: inline-block; */
     position: relative;
     width: 20px;
     height: 20px;
+    color: #fff;
+    top: 1px;
 }
 
 .category-card_buy button .category-card_buy-text {
@@ -2065,11 +2101,11 @@ footer {
 
 .category-card_stock {
     padding-top: 16px;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: center;
     color: #222222;
 }
@@ -2131,10 +2167,10 @@ footer {
 .category-card_optons {
     flex-wrap: wrap;
     padding-top: 8px;
-    font-family: Roboto;
-    font-size: 14px;
+    font-family: Montserrat;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
     color: #222222;
@@ -2150,6 +2186,18 @@ footer {
     justify-content: space-between;
     padding-top: 8px;
     padding-bottom: 16px;
+}
+.col-line .category-card_optons .category-card_option {
+    width: 50%;
+    padding-bottom: 0;
+}
+.col-line .category-card_optons .category-card_option:nth-child(odd) {
+    border-right: 1px solid #A9B4BC;
+    padding-right: 8px;
+}
+.col-line .category-card_optons .category-card_option:nth-child(even) {
+    border-left: 1px solid #A9B4BC;
+    padding-left: 8px;
 }
 
 .category-card_optons .category-card_option .category-card_op-name {
@@ -2177,12 +2225,21 @@ footer {
     display: block;
 }
 
+.col-line .category-card_buy {
+    margin-top: 2px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
 .category-card_footer .line-buttons .category-card-comp_btn {
     border: none;
     background-color: transparent;
 }
 
-.category-card_footer .line-buttons .category-card-comp_btn span {
+/* .category-card_footer .line-buttons .category-card-comp_btn span {
     background-image: url('image/main/balance.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2190,18 +2247,19 @@ footer {
     position: relative;
     width: 40px;
     height: 40px;
-}
+} */
 
 .category-card_footer .line-buttons .category-card-fav_btn {
     border: none;
     background-color: transparent;
 }
 
-.category-card_footer .line-buttons .category-card-fav_btn span {
-    background-image: url('image/main/favorite.svg');
+.category-card_footer .line-buttons .category-card-comp_btn svg,
+.category-card_footer .line-buttons .category-card-fav_btn svg {
+    /* background-image: url('image/main/favorite.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    display: inline-block;
+    display: inline-block; */
     position: relative;
     width: 40px;
     height: 40px;
@@ -2225,6 +2283,7 @@ footer {
 
 .col-line .category-card_body {
     width: 46%;
+    padding-bottom: 8px;
 }
 
 .col-line .category-card_caption {
@@ -2259,12 +2318,6 @@ footer {
 }
 
 .user-history_title {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #000000;
 }
 
@@ -2289,12 +2342,6 @@ footer {
     padding-top: 60px;
 }
 .category-reviews_title {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #000000;
 }
 .category-reviews_card {
@@ -2309,19 +2356,19 @@ footer {
     justify-content: space-between;
 }
 .category-reviews_card .category-reviews_card-head .prod-rev-prname {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 22px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left;    
     color: #207DE9;
 }
 .category-reviews_card .category-reviews_card-head .prod-rev-name {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 18px;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 22px;
     letter-spacing: 0em;
     text-align: right;
     color: #222222;    
@@ -2336,10 +2383,10 @@ footer {
     padding-left: 16px;
 }
 .category-reviews_card-footer {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: right;
     color: #2780E6;
@@ -2362,10 +2409,10 @@ footer {
 #product-tab button {
     background-color: transparent;
     border: none;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
+    font-weight: 700;
+    line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
@@ -2418,11 +2465,6 @@ footer {
 }
 
 .product-title_h1 {
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
     text-align: left;
     color: #000000;
 }
@@ -2436,10 +2478,10 @@ footer {
 }
 .product-info_rating-row .product-model {
     margin-right: 4vw;
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -2451,11 +2493,11 @@ footer {
 
 .product-info_stock {
     padding-top: 16px;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.005em;
     text-align: left;
     color: #222222;
 }
@@ -2473,12 +2515,12 @@ footer {
 }
 
 .product-info_price {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 32px;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 38px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left;    
     color: #000000;
     padding-left: 16px;
 }
@@ -2486,7 +2528,7 @@ footer {
 .product-info_price span {
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
 }
 
 
@@ -2501,10 +2543,10 @@ footer {
 
 .product-info_quantity_text {
     padding-top: 10px;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: Montserrat;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: center;
     color: #A9B4BC;
@@ -2570,15 +2612,24 @@ footer {
     flex-direction: column;
 }
 .product-info_service-buttons-row .pi-service_btn {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-    color: #207DE9
+    color: #207DE9;
 }
-.pr-fav_btn span {
+.product-info_service-buttons-row .pr-comp_btn {
+    margin-top: 16px;
+}
+/* .pr-fav_btn svg {
+    color: #000;
+}
+.pr-comp_btn svg {
+    color: #000;
+} */
+/* .pr-fav_btn span {
     background-image: url('image/prod/product-fav.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2588,8 +2639,8 @@ footer {
     height: 24px;
     top: 6px;
     margin-right: 16px;
-}
-.pr-comp_btn span {
+} */
+/* .pr-comp_btn span {
     background-image: url('image/prod/product-compare.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2599,10 +2650,8 @@ footer {
     height: 24px;
     top: 6px;
     margin-right: 16px;
-}
-.product-info_service-buttons-row .pr-comp_btn {
-    margin-top: 16px;
-}
+} */
+
 
 .product-info_service-text-row {
     display: flex;
@@ -2610,16 +2659,16 @@ footer {
     margin-top: 8px;
 }
 .product-info_service-text-row div {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
     padding-top: 16px;
 }
-.product-info_service-text-row div span {
+/* .product-info_service-text-row div span {
     background-image: url('image/prod/truck-side.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2628,7 +2677,7 @@ footer {
     width: 18px;
     height: 18px;
     top: 5px;
-}
+} */
 
 .product-char_preview {
     padding-bottom: 80px;
@@ -2636,11 +2685,6 @@ footer {
 
 .product-char_preview-title {
     text-align: center;
-    font-family: IBM Plex Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
     color: #000000;
     padding-bottom: 16px;
 }
@@ -2648,6 +2692,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
 }
 .product-char_preview-col .row div {
     padding-top: 24px;
@@ -2666,15 +2715,15 @@ footer {
     text-align: center;
 }
 .pills-options_btn-col .btn {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #207DE9;
 }
-.pills-options_btn-col .btn span {
+/* .pills-options_btn-col .btn span {
     background-image: url('image/prod/Arrow5.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2683,7 +2732,8 @@ footer {
     width: 24px;
     height: 24px;
     top: 12px;
-}
+} */
+
 
 .product_main-row {
     padding-bottom: 80px;
@@ -2706,12 +2756,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 38px;
-    font-family: IBM Plex Sans;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #000000;
 }
 .recomended-row_title-col .btn {
@@ -2731,31 +2775,36 @@ footer {
 }
 
 .product-recomend_wrap .product-recomend_title {
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 14px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 16px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: left;    
     color: #222222;    
 }
 .product-recomend_wrap .product-recomend_price {
     padding-top: 8px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
     color: #222222;
 }
+.product-recomend_wrap .product-recomend_price span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
 .product-recomend_wrap button {
     margin-top: 16px;
-    padding: 0px 16px 12px 12px;
+    padding: 14px 16px 12px 12px;
     border-radius: 1px;
-    font-family: Roboto;
+    font-family: Lato;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
@@ -2764,7 +2813,11 @@ footer {
     background-color: transparent;
     margin-left: 2px;
 }
-.product-recomend_wrap button span {
+.product-recomend_wrap button svg {
+    position: relative;
+    left: 4px;
+}
+/* .product-recomend_wrap button span {
     background-image: url('image/prod/shopping-cart.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2774,7 +2827,7 @@ footer {
     height: 24px;
     top: 8px;
     left: 5px;
-}
+} */
 
 .product-sticky_row {
     display: flex;
@@ -2802,11 +2855,6 @@ footer {
     padding-right: 15.2vw;
 }
 .product-reviews_title {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
     text-align: left;
     color: #000000;
     margin-bottom: 16px;
@@ -2820,10 +2868,10 @@ footer {
     background-color: #fff;
 }
 .product-review_name {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
@@ -2838,13 +2886,18 @@ footer {
 }
 .product-review_rating-value {
     margin-left: 12px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
 }
 .product-review_content {
     margin-top: 18px;
-    font-family: Roboto;
-    font-size: 16px;
+    font-family: Montserrat;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
@@ -2852,11 +2905,10 @@ footer {
 }
 .product-review_advantages,
 .product-review_flaws {
-    margin-top: 8px;
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -2878,15 +2930,20 @@ footer {
 }
 .product-review_dislike,
 .product-review_like {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 28px;
     letter-spacing: 0em;
-    text-align: left;
     margin-right: 20px;
 }
-.product-review_dislike span {
+.product-review_dislike svg,
+.product-review_like svg {
+    position: relative;
+    top: 4px;
+    right: 6px;
+}
+/* .product-review_dislike span {
     background-image: url('image/prod/icon_dislike.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -2907,12 +2964,12 @@ footer {
     height: 20px;
     top: 0px;
     right: 5px;
-}
+} */
 .product-review_strike {
-    font-family: Inter;
-    font-size: 14px;
+    font-family: Montserrat;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 17px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #207DE9;
@@ -2925,10 +2982,10 @@ footer {
     padding-top: 32px;
 }
 .product-reviews_all-btn {
-    font-family: Roboto;
-    font-size: 14px;
+    font-family: Montserrat;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #2A66FF;
@@ -2943,10 +3000,10 @@ footer {
 
 .options-tab_item {
     width: 100%;
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
+    font-weight: 400;
+    line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
