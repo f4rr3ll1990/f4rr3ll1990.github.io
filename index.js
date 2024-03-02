@@ -200,7 +200,7 @@ $(document).ready(function () {
     });
 
     $('.user-history_slider').slick({
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
@@ -213,7 +213,7 @@ $(document).ready(function () {
         responsive: [{
             breakpoint: 1440,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 5
             }
         }, {
             breakpoint: 900,

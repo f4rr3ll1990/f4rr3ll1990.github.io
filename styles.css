@@ -957,6 +957,14 @@ ul.static-menu,
     content: url('image/main/right.svg');
 }
 
+.user-history_slider .slick-prev {
+    z-index: 999;
+    left: -24px;
+}
+.user-history_slider .slick-next {
+    z-index: 999;
+    right: -24px;
+}
 
 .cat-bottom img {
     width: 100%;
