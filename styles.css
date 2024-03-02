@@ -1139,7 +1139,7 @@ ul.static-menu,
     width: 100%;
     height: 80px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin-top: -15px;
     background-color: #F7FAFF;
 }
@@ -1148,6 +1148,7 @@ ul.static-menu,
 /* Request section */
 .request-section {
     background-color: #083a74;
+    margin-top: -1px;
 }
 .request-section_specialist {
     padding-top: 16px;
@@ -1879,9 +1880,8 @@ footer {
     display: flex;
     padding-left: 8px;
     padding-right: 8px;
-
     position: absolute;
-    bottom: -19em;
+    bottom: -22em;
     background-color: #fff;
     z-index: 1400;
     left: 0;
@@ -2832,7 +2832,7 @@ footer {
 .product-sticky_row {
     display: flex;
     flex-direction: row;
-    top: 9.7vh;
+    top: 7.3vh;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-top: 40px;
