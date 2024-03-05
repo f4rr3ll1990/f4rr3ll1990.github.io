@@ -892,6 +892,56 @@
 
 
 
+    /* DELIVERY Page */
+    .delivery-main-row {
+        padding-top: 32px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+    .delivery_title {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+    }
+    .delivery_way-row {
+        padding-top: 22px;
+        padding-bottom: 16px;
+    }
+    .delivery_way-content-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .delivery_way-content ul {
+        padding-left: 20px;
+    }
+    .delivery_price-row {
+        border-bottom: none;
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+    .delivery_time-row {
+        padding-top: 0;
+        padding-bottom: 48px;
+    }
+
+    .delivery_way,
+    .delivery_price,
+    .delivery_time {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+    /*  */
+
+
+
     /* Footer */
     .mobile-footer {
         display: block;

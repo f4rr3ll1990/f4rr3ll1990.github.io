@@ -1937,7 +1937,6 @@ footer {
 
 .category-left_row {
     padding: 16px;
-    background-color: #D8D0D0;
     border-radius: 8px;
 }
 
@@ -3096,6 +3095,210 @@ footer {
     height: 10px;
     top: 0px;
     left: 5px;
+}
+/*  */
+
+/* ABOUT Page */
+.about-main_header {
+    padding-top: 40px;
+    justify-content: center;
+}
+.about-main_header .desktopH1 {
+    max-width: 46%;
+    text-align: center;
+}
+.about-main_header .desktopH1 span {
+    color: #38b92c;
+}
+.about-main_header-text-wrap {
+    justify-content: center;
+}
+.about-main_header-text {
+    padding-top: 64px;
+    max-width:60%;
+}
+.about-main_header-text p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 18px;
+}
+.about-portfolio {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.about-section-content {
+    padding-top: 58px;
+    text-align: center;
+}
+.about-section-content a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 42px;
+    margin-bottom: 16px;
+}
+.about-section-content .about-section_text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4E4E4E;
+}
+.about-store {
+    padding-top: 64px;
+}
+.about-footer {
+    padding-top: 64px;
+}
+.about-footer-header {
+    width: 100%;
+    text-align: center;
+}
+/*  */
+
+/* DELIVERY Page */
+.delivery-main-row {
+    padding-top: 40px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+.delivery-left_row {
+    border-top: 1px solid #A9B4BC;
+    border-bottom: 1px solid #A9B4BC;
+    padding: 16px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.delivery-banner_row {
+    border-bottom: 1px solid #A9B4BC;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    margin-right: 90px;
+}
+.delivery-banner_head {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+    color: #222222;
+}
+.delivery-banner_btnwrap {
+    padding-top: 16px;
+    width: 100%;
+    text-align: center;
+}
+.delivery-banner_btnwrap .big-blue_btn {
+    padding: 8px 16px;
+}
+
+.delivery-banner_phones {
+    padding-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.delivery-banner_phones-icon {
+    padding: 8px;
+}
+.delivery-banner_phones-icon svg {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+.delivery-banner_phones-numbers {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.delivery-banner_phones-numbers div:last-child {
+    padding-top: 4px;
+}
+
+.delivery-banner_open {
+    padding-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4E4E4E;
+}
+
+
+
+
+.delivery_way-row {
+    border-bottom: 1px solid #A9B4BC;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+.delivery_way {
+    text-align: left;
+    padding-left: 0;
+}
+.delivery_way-content {
+    padding-left: 0;
+    padding-top: 22px;
+}
+.np-head {
+    text-align: center;
+    padding-top: 24px;
+    color: #D92222;
+}
+
+.delivery_price-row {
+    border-bottom: 1px solid #A9B4BC;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.delivery_price {
+    text-align: left;
+    padding-left: 0;
+}
+.delivery_price-content {
+    padding-top: 32px;
+}
+.delivery_price-content ul {
+    padding-left: 16px;
+}
+
+.delivery_time-row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.delivery_time {
+    text-align: left;
+    padding-left: 0;
+}
+.delivery_time-content {
+    padding-top: 32px;
+}
+.delivery_time-content ul {
+    padding-left: 16px;
 }
 /*  */
 
