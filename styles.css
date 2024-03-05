@@ -3167,6 +3167,10 @@ footer {
 /*  */
 
 /* DELIVERY Page */
+.delivery_main {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .delivery-main-row {
     padding-top: 40px;
     font-family: Montserrat;
