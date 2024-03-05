@@ -3099,6 +3099,10 @@ footer {
 /*  */
 
 /* ABOUT Page */
+.about-main {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .about-main_header {
     padding-top: 40px;
     justify-content: center;
