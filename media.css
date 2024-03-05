@@ -889,7 +889,15 @@
     }
     /*  */
 
-
+    /* ABOUT Page */
+    .about-main_header .desktopH1 {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+    }
+    /*  */
 
 
     /* DELIVERY Page */
