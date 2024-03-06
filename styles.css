@@ -3310,3 +3310,42 @@ footer {
 }
 /*  */
 
+
+/* CONTACT Page */
+.contact-subtitle {
+    padding-top: 30px;
+}
+.contact-content_row {
+    padding-top: 24px;
+}
+.contact-left {
+    padding-left: 0;
+}
+.contact-right {
+    padding-left: 15%;
+    padding-right: 15%;
+    border-left: 1px solid #A9B4BC;
+}
+.contact-right img {
+    padding-top: 50px;
+}
+.contact-content_text {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+    padding-top: 8px;
+}
+.contact-content_time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-content_pt {
+    padding-top: 42px;
+}
+/*  */
+
