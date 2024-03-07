@@ -3121,6 +3121,16 @@ footer {
     padding-top: 64px;
     max-width:60%;
 }
+
+.about-top_right {
+    display: flex;
+    flex-direction: column;
+}
+.about-top_right img {
+    max-width: 70%;
+    padding-top: 66px;
+}
+
 .about-main_header-text p {
     font-family: Montserrat;
     font-size: 18px;
