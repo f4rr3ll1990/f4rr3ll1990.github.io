@@ -3359,3 +3359,49 @@ footer {
 }
 /*  */
 
+/* ARTICLES Page */
+.articles-wrap {
+    background-color: #f4f8ff;
+    padding: 16px 24px;
+}
+.article-col {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.article-col img {
+    max-width: fit-content;
+}
+.article-card_content {
+    padding: 16px;
+    width: 100%;
+}
+.article-card_links {
+    display: flex;
+    flex-direction: column;
+}
+.article-card_links a {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding-top: 8px;
+}
+.article-showmore {
+    /* width: 100%; */
+    text-align: right;
+    position: absolute;
+    right: 32px;
+    bottom: 18px;
+}
+.article-showmore a {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding-top: 8px;
+}
+/*  */
