@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c,a as o}from"./D-V3dsbx.js";const n={},s=o("h1",null,"Contact page",-1),a=[s];function _(r,l){return c(),t("section",null,a)}const i=e(n,[["render",_]]);export{i as default};

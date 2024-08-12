@@ -1,0 +1,1 @@
+import{h as a,u as s,o as n,c as o,a as r,b as l,w as c,J as u,r as _}from"./D-V3dsbx.js";const f=a({__name:"default",setup(p){return s({script:[{src:"https://telegram.org/js/telegram-web-app.js",defer:!0}]}),(e,d)=>{const t=u;return n(),o("div",null,[r("main",null,[l(t,null,{default:c(()=>[_(e.$slots,"default")]),_:3})])])}}});export{f as default};
