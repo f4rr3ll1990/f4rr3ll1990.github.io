@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARD</title>
+    <!-- Libs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-font@0.1.0/css/fonts.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.18/index.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="mob-info">
+            <div class="topbuttons-wrap">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="image/main/phone_iphone.svg" alt="">
+                            <span>+38 098 88-888-88</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <img src="image/main/language.svg" alt="">
+                            <span>Укр</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="mob-nav" class="navbar mob-nav container-fluid">
+            <div class="row">
+                <div class="mobile-logo_left">
+                    <a href="/" class="logo-image_link">
+                        <img src="image/main/Logo.svg" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="mobile-buttons_right">
+
+                    <a class="nav-link top-cart_button" href="#">
+                        <span class="mobile-search_icon"></span>
+                    </a>
+
+                    <a class="nav-link top-cart_button" href="#">
+                        <span class="mobile-cartbtn_icon"></span>
+                        <span class="mobile-cartbtn_total">0 грн</span>
+                    </a>
+
+                    <button class="navbar-toggler mobile-nav_button" type="button" data-toggle="collapse"
+                        data-target="#mob-nav_collapsable" aria-controls="mob-nav_collapsable" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <div class="animated-icon"><span></span><span></span><span></span></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mob-nav_collapsable">
+                <div class="mob-navwrap">
+
+                    <ul id="mobile-accordion-top" class="static-menu">
+                        <li>
+                            <div class="category">
+                                <div>Видеонаблюдение</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category">
+                                <div>Контроль доступа</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category">
+                                <div>Домофоны</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category">
+                                <div>Услуги</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <div class="category">Menu 2</div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+
+                    <div class="mob-navwrap_buttons">
+                        <a class="mob-fav" href="#">
+                            <span></span>
+                        </a>
+                        <a class="mob-compare" href="#">
+                            <span></span>
+                        </a>
+                        <a class="mob-login" href="#">
+                            <span></span>
+                            Вход
+                        </a>
+                    </div>
+
+                    <!-- <div class="mob-navwrap_bottomhead">
+                        Доп инфа
+                    </div> -->
+
+
+                    <ul id="mobile-accordion-bottom" class="static-menu">
+                        <li>
+                            <div class="category">
+                                <div>Доп инфа</div>
+                                <div>
+                                    <span class="biglink_icon"></span>
+                                </div>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">О нас</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <nav class="w-top_nav container-fluid desk-nav">
+            <div class="row">
+                <div class="topmenu-wrap">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbuttons-wrap">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="image/main/phone_iphone.svg" alt="">
+                                <span>+38 098 88-888-88</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="image/main/person.svg" alt="">
+                                <span>Вход</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="image/main/language.svg" alt="">
+                                <span>Укр</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav id="navbar" class="w-bottom_nav container-fluid desk-nav">
+            <div class="row">
+                <div class="logo-wrap">
+                    <a href="/" class="logo-image_link">
+                        <img src="image/main/Logo.svg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="mainmenu-wrap">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link hidden-menu_trigger" href="#">Видеонаблюдение</a>
+                            <div class="hidden-menu_wrap">
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card"
+                                        style="background-image: url('image/main/topnav83.svg')">
+                                        <div class="hidden-menu_card-head">
+                                            Комплекты видеонаблюдения
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">IP комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HDCVI комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TurboHD комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Wi-fi комплекты</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">MHD комплекты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hidden-menu_cardwrap">
+                                    <div class="hidden-menu_card">
+                                        <div class="hidden-menu_card-head">
+                                            qwdfwed ewdfwe
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hidden-menu_trigger" href="#">Контроль доступа</a>
+                            <div class="hidden-menu_wrap">
+                                <ul>
+                                    <li><a href="#">Контроль доступа</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hidden-menu_trigger" href="#">Домофоны</a>
+                            <div class="hidden-menu_wrap">
+                                <ul>
+                                    <li><a href="#">Домофоны</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hidden-menu_trigger">Услуги</a>
+                            <div class="hidden-menu_wrap">
+                                <ul>
+                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                    <li><a href="#">qweqwe</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menubuttons-wrap">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="image/main/search.svg" alt="" class="menubuttons-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="image/main/favorite.svg" alt="" class="menubuttons-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="image/main/balance.svg" alt="" class="menubuttons-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link top-cart_button" href="#">
+                                <img src="image/main/shopping_cart.svg" alt="" class="menubuttons-icon">
+                                <span>0 грн</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <style>
+        /* GALLERY */
+        .newGallery_row {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .newGalleryCard {
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-top: 24px;
+        }
+        /* small card (1) */
+        .newGalleryCard:nth-of-type(5n-4) {
+            width: 33.333333%;
+        }
+        /* big card (2) */
+        .newGalleryCard:nth-of-type(5n-3) {
+            width: 66.666667%;
+        }
+        /* small card (3,4,5) */
+        .newGalleryCard:nth-of-type(5n-2),
+        .newGalleryCard:nth-of-type(5n-1),
+        .newGalleryCard:nth-of-type(5n) {
+            width: 33.333333%;
+        }
+
+        /* Flip card */
+        .newGalleryCard .card-flip>div {
+            backface-visibility: hidden;
+            transition: transform 300ms;
+            transition-timing-function: linear;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+        }
+
+        .newGalleryCard .card-front img {
+            width: 100%;
+        }
+
+        .newGalleryCard .card-front {
+            transform: rotateY(0deg);
+        }
+
+        .newGalleryCard .card-back {
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+        }
+
+        .newGalleryCard .card-flip:hover .card-front {
+            transform: rotateY(-180deg);
+        }
+
+        .newGalleryCard .card-flip:hover .card-back {
+            transform: rotateY(0deg);
+        }
+
+        /* Card styles */
+        .newGalleryCard .card-front img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            max-height: 55vh;
+        }
+        .newGalleryCard .card-body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            background-color: #fff;
+            text-align: center;
+            padding: 32px 16px 32px 16px;
+        }
+
+        .newGalleryCard .portfolio-item_title {
+            font-family: IBM Plex Sans;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            letter-spacing: 0em;
+            color: #000000;
+        }
+
+        .newGalleryCard .portfolio-item_subtitle {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #696969;
+        }
+
+        .newGalleryCard .portfolio-item_footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: 1.6vw;
+            padding-right: 1.6vw;
+        }
+
+        .newGalleryCard .portfolio-item_footer .pf-logo {
+            width: 10vw;
+            padding-top: 4px;
+        }
+        .newGalleryCard .portfolio-item_footer .pf-link a {
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+            background-color: #207DE9;
+            border-radius: 8px;
+            padding: 8px 32px 8px 16px;
+        }
+
+        .newGalleryCard .portfolio-item_footer .pf-link a span {
+            background-image: url('image/main/Arrow 4.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* big card (2) */
+        .newGalleryCard:nth-of-type(5n-3) .port-card-big .portfolio-item_title {
+            padding-top: 24px;
+            padding-left: 118px;
+            padding-right: 118px;
+        }
+
+        @media (max-width: 800px) {
+
+            .newGalleryCard:nth-of-type(5n-4),
+            .newGalleryCard:nth-of-type(5n-3),
+            .newGalleryCard:nth-of-type(5n-2),
+            .newGalleryCard:nth-of-type(5n-1),
+            .newGalleryCard:nth-of-type(5n) {
+                width: 100%;
+            }
+            .newGalleryCard .portfolio-item_footer .pf-logo img {
+                display: none;
+            }
+        }
+
+    </style>
+    <section class="container-fluid">
+        <div class="row newGallery_row">
+
+            <div class="newGalleryCard">
+                <div class="card card-flip ">
+                    <div class="card-front">
+                        <img src="image/gallery/GalleryTest1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-back">
+                        <div class="port-card-small card-body">
+                            <div>
+                                <div class="portfolio-item_title">Установка в доме</div>
+                                <div class="portfolio-item_subtitle">
+                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
+                                </div>
+                            </div>
+                            <div class="portfolio-item_footer">
+                                <div class="pf-logo">
+                                    <img src="image/main/hik.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pf-link">
+                                    <a href="#">Показать еще <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newGalleryCard">
+                <div class="card card-flip ">
+                    <div class="card-front">
+                        <img src="image/gallery/GalleryTest2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-back">
+                        <div class="port-card-small card-body">
+                            <div>
+                                <div class="portfolio-item_title">Установка в Офисе</div>
+                                <div class="portfolio-item_subtitle">
+                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности для
+                                    многих объектов, включая жилые
+                                    здания, офисы, торговые центры и прочие публичные места. Оно
+                                    позволяет не только вести непрерывное
+                                    наблюдение за происходящим, но и оперативно реагировать на возможные
+                                </div>
+                            </div>
+                            <div class="portfolio-item_footer">
+                                <div class="pf-logo">
+                                    <img src="image/main/hik.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pf-link">
+                                    <a href="#">Показать еще <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newGalleryCard">
+                <div class="card card-flip ">
+                    <div class="card-front">
+                        <img src="image/gallery/GalleryTest3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-back">
+                        <div class="port-card-small card-body">
+                            <div>
+                                <div class="portfolio-item_title">Установка в доме</div>
+                                <div class="portfolio-item_subtitle">
+                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности для
+                                    многих объектов, включая жилые
+                                    здания, офисы, торговые центры и прочие публичные места. Оно
+                                    позволяет не только вести непрерывное
+                                    наблюдение за происходящим, но и оперативно реагировать на возможные
+                                </div>
+                            </div>
+                            <div class="portfolio-item_footer">
+                                <div class="pf-logo">
+                                    <img src="image/main/hik.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pf-link">
+                                    <a href="#">Показать еще <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newGalleryCard">
+                <div class="card card-flip ">
+                    <div class="card-front">
+                        <img src="image/gallery/GalleryTest4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-back">
+                        <div class="port-card-small card-body">
+                            <div>
+                                <div class="portfolio-item_title">Установка в доме</div>
+                                <div class="portfolio-item_subtitle">
+                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
+                                </div>
+                            </div>
+                            <div class="portfolio-item_footer">
+                                <div class="pf-logo">
+                                    <img src="image/main/hik.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pf-link">
+                                    <a href="#">Показать еще <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newGalleryCard">
+                <div class="card card-flip ">
+                    <div class="card-front">
+                        <img src="image/gallery/GalleryTest5.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-back">
+                        <div class="port-card-small card-body">
+                            <div>
+                                <div class="portfolio-item_title">Установка в доме</div>
+                                <div class="portfolio-item_subtitle">
+                                    Видеонаблюдение сегодня-неотъемлемая часть системы безопасности
+                                </div>
+                            </div>
+                            <div class="portfolio-item_footer">
+                                <div class="pf-logo">
+                                    <img src="image/main/hik.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pf-link">
+                                    <a href="#">Показать еще <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="container-fluid mobile-hide">
+        <div class="row footer-head">
+            <div class="col-lg-3 footer-text">
+                Ми використовуємо передові технології та найкращі практики, щоб забезпечити безпеку вашого простору.
+            </div>
+            <div class="col-lg-3 footer-text">
+                команда професіоналів готова реагувати на будь-які виклики, забезпечуючи рівень обслуговування.
+            </div>
+            <div class="col-lg-6 email-form">
+                <div class="email-form_left">
+                    Підписуйтеся щоб бути в курсі всіх новин і вигідних пропозицій.
+                </div>
+                <div class="email-form_right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="EMAIL" aria-label="EMAIL"
+                            aria-describedby="footer-email-button">
+                        <div class="input-group-append">
+                            <button class="btn btn-success " type="button" id="footer-email-button">ПОДПИСАТСЯ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-center">
+            <div class="col-lg-3">
+                <img src="image/main/Logo1.svg" alt="" class="img-fluid footer-logo">
+                <div class="footer-logo_text">
+                    Готовы поговорить с экспертом? Позвоните нам
+                </div>
+                <div class="footer-call_wrap">
+                    <button class="footer-call_button"><span></span>+38-098-88-888-88</button>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+                <div class="footer-center_title">
+                    КОМПАНИЯ
+                </div>
+                <div class="footer-center_nav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Почуму покупать</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сотрудничество</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Оферта и политика конфиденциальности</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Условия использования сайта</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+                <div class="footer-center_title">
+                    КАТАЛОГ
+                </div>
+                <div class="footer-center_nav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Видеонаблюдение</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Домофоны</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контроль доступа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Услуги</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1">
+                <div class="footer-center_title">
+                    ПОКУПАТЕЛЯМ
+                </div>
+                <div class="footer-center_nav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Гарантия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Частые вопросы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Статьи</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="footer-bottom_left">
+                Всі права належать WARD © 2024
+            </div>
+            <div class="footer-bottom_right">
+                <a href="#" class="telegram-social_icon footer-social_button"></a>
+                <a href="#" class="facebook-social_icon footer-social_button"></a>
+                <a href="#" class="instagram-social_icon footer-social_button"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
